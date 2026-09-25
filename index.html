@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#090909" />
+  <title>Hood Stories Chicago — Auto Market</title>
+  <meta name="description" content="Katalog pojazdów Hood Stories Chicago" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Hood Stories Chicago Auto Market">
+      <span class="brand-mark">HSC</span>
+      <span><strong>HOOD STORIES</strong><small>CHICAGO • AUTO MARKET</small></span>
+    </a>
+    <nav>
+      <a href="#catalog">Katalog</a><a href="#how">Jak kupić</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">HOOD STORIES CHICAGO</p>
+        <h1>Znajdź auto.<br><span>Zbuduj swoją historię.</span></h1>
+        <p class="lead">Pełny katalog pojazdów dostępnych u dealera — od daily, przez JDM i klasyki, aż po supersamochody, SUV-y i pickupy.</p>
+        <div class="hero-actions"><a class="btn primary" href="#catalog">Przeglądaj katalog</a><a class="btn ghost" href="#how">Jak kupić?</a></div>
+        <div class="stats"><div><b id="vehicleCount">108</b><span>pojazdów</span></div><div><b>735+</b><span>wariantów</span></div><div><b>$800K</b><span>maks. segment</span></div></div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-label">FEATURED</div>
+        <img id="heroImage" src="assets/cars/img-001-ram-1500-w-zlotym-swietle.webp" alt="Pojazd wyróżniony" />
+        <div class="hero-card-overlay"><span id="heroCategory">SPORTOWE</span><h2 id="heroName">Nissan GT-R</h2><p id="heroPrice">$250,000</p></div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="section-head"><div><p class="eyebrow">KATALOG</p><h2>Wybierz swój następny samochód</h2></div><div id="resultCount" class="result-count"></div></div>
+      <div class="toolbar">
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Szukaj marki, modelu lub ID…" autocomplete="off"></label>
+        <select id="brandFilter" aria-label="Marka"><option value="">Wszystkie marki</option></select>
+        <select id="sortSelect" aria-label="Sortowanie"><option value="featured">Polecane</option><option value="priceAsc">Cena: rosnąco</option><option value="priceDesc">Cena: malejąco</option><option value="name">Nazwa A–Z</option></select>
+      </div>
+      <div class="chips" id="categoryChips"></div>
+      <div class="grid" id="carGrid"></div>
+      <div class="empty" id="emptyState" hidden><h3>Brak wyników</h3><p>Zmień filtr albo wpisz inną nazwę.</p></div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="how-copy"><p class="eyebrow">ZAKUP W GRZE</p><h2>Katalog w przeglądarce.<br>Odbiór w Chicago.</h2><p>Na stronie wybierasz model i zapamiętujesz jego ID. W salonie podajesz ID sprzedawcy NPC, wybierasz formę płatności, a pojazd odbierasz w strefie wydania.</p></div>
+      <div class="steps"><div><b>01</b><h3>Wybierz pojazd</h3><p>Filtruj po kategorii, marce i cenie.</p></div><div><b>02</b><h3>Zapisz ID</h3><p>Każdy model ma kod HSC-XXX.</p></div><div><b>03</b><h3>Kup u NPC</h3><p>Gotówka lub konto bankowe — zależnie od systemu w grze.</p></div></div>
+    </section>
+  </main>
+
+  <footer><div><strong>HOOD STORIES CHICAGO</strong><span>Auto Market</span></div><p>Projekt RP • katalog pojazdów</p></footer>
+
+  <dialog id="carModal" class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Zamknij">×</button>
+    <div class="modal-image-wrap"><img id="modalImage" alt=""></div>
+    <div class="modal-content">
+      <div class="modal-tags"><span id="modalCategory"></span><span id="modalId"></span></div>
+      <h2 id="modalName"></h2><p class="modal-brand" id="modalBrand"></p>
+      <div class="modal-specs"><div><span>Cena</span><b id="modalPrice"></b></div><div><span>Warianty</span><b id="modalVariants"></b></div><div><span>Kod pojazdu</span><b id="modalCode"></b></div></div>
+      <div class="notice"><b>Jak kupić?</b><p>Zapisz ID pojazdu i użyj go u sprzedawcy w salonie Hood Stories Chicago.</p></div>
+    </div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
