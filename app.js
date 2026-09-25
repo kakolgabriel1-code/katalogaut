@@ -1,10 +1,171 @@
-let cars=[];let activeCategory='Wszystkie';const fmt=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);const $=s=>document.querySelector(s);const grid=$('#carGrid'),search=$('#searchInput'),brand=$('#brandFilter'),sort=$('#sortSelect'),chips=$('#categoryChips'),empty=$('#emptyState'),count=$('#resultCount'),modal=$('#carModal');
+let cars=[];
+let activeCategory='Wszystkie';
+let currentModalCar=null;
 
-function renderChips(){const cats=['Wszystkie',...new Set(cars.map(c=>c.category))];chips.innerHTML=cats.map(c=>`<button class="chip ${c===activeCategory?'active':''}" data-cat="${c}">${c}</button>`).join('');chips.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderChips();render();});}
-function fillBrands(){[...new Set(cars.map(c=>c.brand))].sort().forEach(b=>brand.insertAdjacentHTML('beforeend',`<option value="${b}">${b}</option>`));}
-function visible(){let q=search.value.trim().toLowerCase(),arr=cars.filter(c=>(activeCategory==='Wszystkie'||c.category===activeCategory)&&(!brand.value||c.brand===brand.value)&&(!q||`${c.name} ${c.brand} ${c.id} ${c.code}`.toLowerCase().includes(q)));if(sort.value==='priceAsc')arr.sort((a,b)=>a.price-b.price);else if(sort.value==='priceDesc')arr.sort((a,b)=>b.price-a.price);else if(sort.value==='name')arr.sort((a,b)=>a.name.localeCompare(b.name));else arr.sort((a,b)=>(b.featured-a.featured)||a.id.localeCompare(b.id));return arr;}
-function card(c){return `<article class="card" data-id="${c.id}" tabindex="0"><div class="card-img"><img loading="lazy" src="${c.image}" alt="${c.name}"><span class="badge">${c.category}</span></div><div class="card-body"><div class="card-top"><span>${c.brand}</span><span>${c.id}</span></div><h3>${c.name}</h3><div class="card-bottom"><span class="price">${fmt(c.price)}</span><span class="view">Zobacz auto →</span></div></div></article>`}
-function render(){const arr=visible();grid.innerHTML=arr.map(card).join('');count.textContent=`${arr.length} z ${cars.length} pojazdów`;empty.hidden=arr.length>0;grid.querySelectorAll('.card').forEach(el=>{const open=()=>openModal(cars.find(c=>c.id===el.dataset.id));el.onclick=open;el.onkeydown=e=>{if(e.key==='Enter')open();};});}
-function openModal(c){$('#modalImage').src=c.image;$('#modalImage').alt=c.name;$('#modalCategory').textContent=c.category;$('#modalId').textContent=c.id;$('#modalName').textContent=c.name;$('#modalBrand').textContent=c.brand;$('#modalPrice').textContent=fmt(c.price);$('#modalVariants').textContent=c.variants;$('#modalCode').textContent=c.code;modal.showModal();}
-$('#modalClose').onclick=()=>modal.close();modal.addEventListener('click',e=>{if(e.target===modal)modal.close();});search.oninput=render;brand.onchange=render;sort.onchange=render;
-fetch('cars.json').then(r=>r.json()).then(data=>{cars=data;$('#vehicleCount').textContent=cars.length;fillBrands();renderChips();render();const f=cars.filter(x=>x.featured)[Math.floor(Math.random()*cars.filter(x=>x.featured).length)];$('#heroImage').src=f.image;$('#heroName').textContent=f.name;$('#heroCategory').textContent=f.category.toUpperCase();$('#heroPrice').textContent=fmt(f.price);}).catch(()=>{grid.innerHTML='<p>Nie udało się załadować katalogu. Uruchom stronę przez hosting lub prosty serwer lokalny.</p>';});
+const $=s=>document.querySelector(s);
+const grid=$('#carGrid');
+const search=$('#searchInput');
+const brand=$('#brandFilter');
+const price=$('#priceFilter');
+const sort=$('#sortSelect');
+const chips=$('#categoryChips');
+const empty=$('#emptyState');
+const count=$('#resultCount');
+const modal=$('#carModal');
+
+const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
+
+function categories(){
+  return ['Wszystkie',...new Set(cars.map(c=>c.category))];
+}
+
+function renderChips(){
+  chips.innerHTML=categories().map(cat=>{
+    const amount=cat==='Wszystkie'?cars.length:cars.filter(c=>c.category===cat).length;
+    return `<button class="chip ${cat===activeCategory?'active':''}" data-cat="${cat}">${cat} · ${amount}</button>`;
+  }).join('');
+  chips.querySelectorAll('.chip').forEach(btn=>{
+    btn.onclick=()=>{
+      activeCategory=btn.dataset.cat;
+      renderChips();
+      render();
+    };
+  });
+}
+
+function fillBrands(){
+  const brands=[...new Set(cars.map(c=>c.brand))].sort((a,b)=>a.localeCompare(b));
+  brand.innerHTML='<option value="">Wszystkie marki</option>'+brands.map(b=>`<option value="${b}">${b}</option>`).join('');
+}
+
+function filteredCars(){
+  const q=search.value.trim().toLowerCase();
+  const maxPrice=Number(price.value||0);
+
+  const out=cars.filter(c=>{
+    const categoryOk=activeCategory==='Wszystkie'||c.category===activeCategory;
+    const brandOk=!brand.value||c.brand===brand.value;
+    const priceOk=!maxPrice||c.price<=maxPrice;
+    const haystack=`${c.name} ${c.brand} ${c.id} ${c.code||''}`.toLowerCase();
+    const searchOk=!q||haystack.includes(q);
+    return categoryOk&&brandOk&&priceOk&&searchOk;
+  });
+
+  if(sort.value==='priceAsc') out.sort((a,b)=>a.price-b.price);
+  else if(sort.value==='priceDesc') out.sort((a,b)=>b.price-a.price);
+  else if(sort.value==='name') out.sort((a,b)=>a.name.localeCompare(b.name));
+  else out.sort((a,b)=>(Number(b.featured)-Number(a.featured))||a.id.localeCompare(b.id));
+
+  return out;
+}
+
+function carCard(c){
+  return `
+    <article class="car-card" data-id="${c.id}" tabindex="0" aria-label="${c.name}">
+      <div class="car-image">
+        <img loading="lazy" src="${c.image}" alt="${c.name}">
+        <span class="car-badge">${c.category}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span>${c.brand}</span><span>${c.id}</span></div>
+        <h3>${c.name}</h3>
+        <div class="card-foot">
+          <span class="card-price">${money(c.price)}</span>
+          <span class="card-open">Zobacz auto →</span>
+        </div>
+      </div>
+    </article>`;
+}
+
+function render(){
+  const list=filteredCars();
+  grid.innerHTML=list.map(carCard).join('');
+  count.textContent=`${list.length} z ${cars.length} pojazdów`;
+  empty.hidden=list.length>0;
+
+  grid.querySelectorAll('.car-card').forEach(el=>{
+    const open=()=>openModal(cars.find(c=>c.id===el.dataset.id));
+    el.onclick=open;
+    el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}};
+  });
+}
+
+function openModal(c){
+  if(!c)return;
+  currentModalCar=c;
+  $('#modalImage').src=c.image;
+  $('#modalImage').alt=c.name;
+  $('#modalCategory').textContent=c.category;
+  $('#modalId').textContent=c.id;
+  $('#modalBrand').textContent=c.brand;
+  $('#modalName').textContent=c.name;
+  $('#modalPrice').textContent=money(c.price);
+  $('#modalVariants').textContent=c.variants??'—';
+  $('#modalCode').textContent=c.code||'—';
+  $('#copyId').textContent='Kopiuj ID pojazdu';
+  modal.showModal();
+}
+
+function setFeatured(){
+  const featured=cars.filter(c=>c.featured);
+  const pool=featured.length?featured:cars;
+  const c=pool[Math.floor(Math.random()*pool.length)];
+  if(!c)return;
+  $('#heroImage').src=c.image;
+  $('#heroImage').alt=c.name;
+  $('#heroName').textContent=c.name;
+  $('#heroCategory').textContent=c.category.toUpperCase();
+  $('#heroPrice').textContent=money(c.price);
+  $('#heroId').textContent=c.id;
+  $('#featuredCard').onclick=()=>openModal(c);
+}
+
+function resetFilters(){
+  search.value='';
+  brand.value='';
+  price.value='';
+  sort.value='featured';
+  activeCategory='Wszystkie';
+  renderChips();
+  render();
+}
+
+$('#modalClose').onclick=()=>modal.close();
+$('#modalCloseBottom').onclick=()=>modal.close();
+modal.addEventListener('click',e=>{if(e.target===modal)modal.close();});
+search.oninput=render;
+brand.onchange=render;
+price.onchange=render;
+sort.onchange=render;
+$('#resetFilters').onclick=resetFilters;
+
+$('#copyId').onclick=async()=>{
+  if(!currentModalCar)return;
+  try{
+    await navigator.clipboard.writeText(currentModalCar.id);
+    $('#copyId').textContent='Skopiowano ✓';
+  }catch{
+    $('#copyId').textContent=currentModalCar.id;
+  }
+};
+
+fetch('cars.json')
+  .then(r=>{
+    if(!r.ok)throw new Error('cars.json');
+    return r.json();
+  })
+  .then(data=>{
+    cars=data;
+    $('#vehicleCount').textContent=cars.length;
+    $('#brandCount').textContent=new Set(cars.map(c=>c.brand)).size;
+    $('#categoryCount').textContent=new Set(cars.map(c=>c.category)).size;
+    fillBrands();
+    renderChips();
+    render();
+    setFeatured();
+  })
+  .catch(err=>{
+    console.error(err);
+    count.textContent='Błąd ładowania katalogu';
+    grid.innerHTML='<div class="empty-state"><strong>Nie udało się załadować katalogu.</strong><span>Odśwież stronę po chwili.</span></div>';
+  });
