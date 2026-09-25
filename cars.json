@@ -120,30 +120,6 @@
     "featured": false
   },
   {
-    "id": "HSC-011",
-    "name": "PMC Concord Wagon (Ford)",
-    "brand": "Ford",
-    "category": "Sedan / miejskie",
-    "price": 151000,
-    "variants": 12,
-    "code": "unupmc:unupmc_vehicle_pmc_concord_wagon",
-    "image": "img-011-klasyczny-kremowy-kombi-w-neonowym-studiu.webp",
-    "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-012",
-    "name": "PMC Freightmaster (Black)",
-    "brand": "PMC",
-    "category": "Vany / użytkowe",
-    "price": 52000,
-    "variants": 8,
-    "code": "unupmc:unupmc_vehicle_pmc_freightmaster",
-    "image": "img-012-masywny-pickup-w-mrocznym-studiu.webp",
-    "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
-    "featured": false
-  },
-  {
     "id": "HSC-013",
     "name": "UNU-Cowley Pard Delivery (Pickup) (Ivory)",
     "brand": "UNU",
@@ -152,18 +128,6 @@
     "variants": 4,
     "code": "unucowley:unucowley_vehicle_unucowley_delivery_pickup",
     "image": "img-013-potezny-pickup-w-triptyku-studia-motoryzacyjnego.webp",
-    "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-014",
-    "name": "UNU-Cowley Pard Delivery Van (Ford)",
-    "brand": "Ford",
-    "category": "Vany / użytkowe",
-    "price": 78000,
-    "variants": 6,
-    "code": "unucowley:unucowley_vehicle_unucowley_delivery_van",
-    "image": "img-014-srebrny-van-w-kinowym-studiu.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -180,42 +144,6 @@
     "featured": false
   },
   {
-    "id": "HSC-016",
-    "name": "Reichswagen Type 1 (Apple)",
-    "brand": "Reichswagen",
-    "category": "Klasyki / JDM",
-    "price": 127000,
-    "variants": 8,
-    "code": "unugnr:gnr_vehicle_rw_type1_coupe",
-    "image": "img-015-klasyczne-coupe-w-mrocznym-studio.webp",
-    "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-017",
-    "name": "Black Lamborghini Huracan Sterrato",
-    "brand": "Lamborghini",
-    "category": "Supercar",
-    "price": 470000,
-    "variants": 3,
-    "code": "new_cars:lamborghini_huracan_sterrato",
-    "image": "img-016-lamborghini-huracan-w-filmowym-studio.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": true
-  },
-  {
-    "id": "HSC-018",
-    "name": "Blue Ford Mustang 2024",
-    "brand": "Ford",
-    "category": "Sportowe",
-    "price": 145000,
-    "variants": 3,
-    "code": "new_cars:ford_mustang_2024",
-    "image": "img-017-biaa-mustang-cabrio-w-kinowym-studiu.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
     "id": "HSC-019",
     "name": "White Aston Martin DBX",
     "brand": "Aston Martin",
@@ -226,18 +154,6 @@
     "image": "img-018-luksusowy-suv-w-swietle-studyjnym.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
-  },
-  {
-    "id": "HSC-020",
-    "name": "White Aston Martin Vantage",
-    "brand": "Aston Martin",
-    "category": "Vany / użytkowe",
-    "price": 78000,
-    "variants": 3,
-    "code": "new_cars:aston_martin_vantage",
-    "image": "img-019-grafitowe-coupe-w-kinowym-swietle.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": true
   },
   {
     "id": "HSC-021",
@@ -308,18 +224,6 @@
     "variants": 3,
     "code": "new_cars:bentley_continental_gtspeed_2024",
     "image": "img-024-luksusowy-bentley-w-swietle-showroomu.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
-    "id": "HSC-027",
-    "name": "White Bentley Flying 2020",
-    "brand": "Bentley",
-    "category": "Sedan / miejskie",
-    "price": 79000,
-    "variants": 3,
-    "code": "new_cars:bentley_flying_2020",
-    "image": "img-025-elegancka-grafitowa-limuzyna-w-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -420,30 +324,6 @@
     "featured": true
   },
   {
-    "id": "HSC-036",
-    "name": "White Dodge Charger HellCat",
-    "brand": "Dodge",
-    "category": "Sportowe",
-    "price": 145000,
-    "variants": 3,
-    "code": "new_cars:dodge_charger_hellcat",
-    "image": "img-034-czarny-muscle-car-w-kinowym-swietle.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
-    "id": "HSC-037",
-    "name": "White Ferrari 12Cilindri Spider",
-    "brand": "Ferrari",
-    "category": "Sedan / miejskie",
-    "price": 560000,
-    "variants": 3,
-    "code": "new_cars:ferrari_12cilindri",
-    "image": "img-035-ferrari-grand-touring-reimagined.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
     "id": "HSC-038",
     "name": "White Ferrari Purosangue",
     "brand": "Ferrari",
@@ -504,18 +384,6 @@
     "featured": false
   },
   {
-    "id": "HSC-043",
-    "name": "White Lamborghini Aventador SVJ",
-    "brand": "Lamborghini",
-    "category": "Supercar",
-    "price": 610000,
-    "variants": 3,
-    "code": "new_cars:lamborghini_aventador_svj",
-    "image": "img-041-trojpanelowa-wizja-biaego-supersamochodu.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": true
-  },
-  {
     "id": "HSC-044",
     "name": "White Lambroghini Urus",
     "brand": "Lamborghini",
@@ -524,18 +392,6 @@
     "variants": 3,
     "code": "new_cars:lamborghini_urus",
     "image": "img-042-kinematograficzny-suv-w-triptyku.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
-    "id": "HSC-045",
-    "name": "White Land Rover Range Rover 2022",
-    "brand": "Land Rover",
-    "category": "SUV",
-    "price": 125000,
-    "variants": 3,
-    "code": "new_cars:land_rover_2022",
-    "image": "img-043-elegancki-suv-w-studyjnym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -550,18 +406,6 @@
     "image": "img-044-maserati-w-trzech-kinowych-ujeciach.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
-  },
-  {
-    "id": "HSC-047",
-    "name": "White McLaren 600LT",
-    "brand": "McLaren",
-    "category": "Supercar",
-    "price": 520000,
-    "variants": 3,
-    "code": "new_cars:mclaren_600lt",
-    "image": "img-045-mroczny-supercar-w-swietle-reflektorow.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": true
   },
   {
     "id": "HSC-048",
@@ -608,18 +452,6 @@
     "variants": 3,
     "code": "new_cars:mercedes_c63",
     "image": "img-049-mercedes-amg-w-zotym-swietle.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
-    "id": "HSC-052",
-    "name": "White Mercedes-Benz V-Class",
-    "brand": "Mercedes-Benz",
-    "category": "Sedan / miejskie",
-    "price": 88000,
-    "variants": 3,
-    "code": "new_cars:mercedes_v_class",
-    "image": "img-014-srebrny-van-w-kinowym-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -684,18 +516,6 @@
     "featured": false
   },
   {
-    "id": "HSC-058",
-    "name": "White Rolls-Royce Spectre",
-    "brand": "Rolls-Royce",
-    "category": "Sedan / miejskie",
-    "price": 480000,
-    "variants": 3,
-    "code": "new_cars:rolls_royce_spectre",
-    "image": "img-025-elegancka-grafitowa-limuzyna-w-studiu.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
     "id": "HSC-059",
     "name": "White Shelby F-150 Super Snake",
     "brand": "Shelby",
@@ -741,18 +561,6 @@
     "code": "new_cars:tesla_x_plaid",
     "image": "img-021-luksusowy-suv-w-kinowym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
-  },
-  {
-    "id": "HSC-063",
-    "name": "BMW M3 G80 LCI",
-    "brand": "BMW",
-    "category": "Sportowe",
-    "price": 145000,
-    "variants": 3,
-    "code": "blockyragecivil:brbmwm3g80",
-    "image": "img-019-grafitowe-coupe-w-kinowym-swietle.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
   {
@@ -1100,18 +908,6 @@
     "variants": 11,
     "code": "gtcraft:mazda_fc3s",
     "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
-    "sourcePack": "gtcraft-2.0.1",
-    "featured": false
-  },
-  {
-    "id": "HSC-093",
-    "name": "Mazda RX-7 FD3S(White)",
-    "brand": "Mazda",
-    "category": "Klasyki / JDM",
-    "price": 127000,
-    "variants": 7,
-    "code": "gtcraft:mazda_fd3s_late",
-    "image": "img-015-klasyczne-coupe-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
