@@ -1,72 +1,149 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#090909" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="color-scheme" content="dark">
   <title>Hood Stories Chicago — Auto Market</title>
-  <meta name="description" content="Katalog pojazdów Hood Stories Chicago" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Katalog pojazdów Hood Stories Chicago Auto Market">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="grain"></div>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Hood Stories Chicago Auto Market">
-      <span class="brand-mark">HSC</span>
-      <span><strong>HOOD STORIES</strong><small>CHICAGO • AUTO MARKET</small></span>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-badge">HSC</span>
+      <span class="brand-copy">
+        <strong>HOOD STORIES</strong>
+        <small>CHICAGO • AUTO MARKET</small>
+      </span>
     </a>
     <nav>
-      <a href="#catalog">Katalog</a><a href="#how">Jak kupić</a>
+      <a href="#catalog">Katalog</a>
+      <a href="#how">Jak kupić</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-glow"></div>
       <div class="hero-copy">
-        <p class="eyebrow">HOOD STORIES CHICAGO</p>
-        <h1>Znajdź auto.<br><span>Zbuduj swoją historię.</span></h1>
-        <p class="lead">Pełny katalog pojazdów dostępnych u dealera — od daily, przez JDM i klasyki, aż po supersamochody, SUV-y i pickupy.</p>
-        <div class="hero-actions"><a class="btn primary" href="#catalog">Przeglądaj katalog</a><a class="btn ghost" href="#how">Jak kupić?</a></div>
-        <div class="stats"><div><b id="vehicleCount">108</b><span>pojazdów</span></div><div><b>735+</b><span>wariantów</span></div><div><b>$800K</b><span>maks. segment</span></div></div>
+        <span class="kicker">HOOD STORIES CHICAGO</span>
+        <h1>Znajdź auto.<br><em>Zbuduj swoją historię.</em></h1>
+        <p class="hero-lead">Od daily i klasyków po JDM, SUV-y, pickupy i supersamochody. Wybierz model, zapamiętaj jego ID i odbierz go w salonie.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalog">Przeglądaj katalog</a>
+          <a class="btn btn-secondary" href="#how">Jak kupić?</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="vehicleCount">—</strong><span>pojazdów</span></div>
+          <div><strong id="brandCount">—</strong><span>marek</span></div>
+          <div><strong id="categoryCount">—</strong><span>kategorii</span></div>
+        </div>
       </div>
-      <div class="hero-card">
-        <div class="hero-card-label">FEATURED</div>
-        <img id="heroImage" src="img-005-ram-1500-w-zotym-swietle.webp" alt="Pojazd wyróżniony" />
-        <div class="hero-card-overlay"><span id="heroCategory">SPORTOWE</span><h2 id="heroName">Nissan GT-R</h2><p id="heroPrice">$250,000</p></div>
+
+      <article class="featured-card" id="featuredCard">
+        <div class="featured-top">
+          <span>FEATURED</span>
+          <span id="heroId">HSC----</span>
+        </div>
+        <img id="heroImage" alt="Wyróżniony pojazd">
+        <div class="featured-gradient"></div>
+        <div class="featured-info">
+          <span id="heroCategory">SPORTOWE</span>
+          <h2 id="heroName">Ładowanie...</h2>
+          <strong id="heroPrice">—</strong>
+        </div>
+      </article>
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-title">
+        <div>
+          <span class="kicker">KATALOG</span>
+          <h2>Wybierz swój następny pojazd</h2>
+        </div>
+        <p id="resultCount">Ładowanie katalogu...</p>
+      </div>
+
+      <div class="catalog-panel">
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Szukaj marki, modelu, ID lub kodu..." autocomplete="off">
+        </div>
+        <select id="brandFilter" aria-label="Filtruj po marce">
+          <option value="">Wszystkie marki</option>
+        </select>
+        <select id="priceFilter" aria-label="Filtruj po cenie">
+          <option value="">Każda cena</option>
+          <option value="50000">Do $50K</option>
+          <option value="100000">Do $100K</option>
+          <option value="200000">Do $200K</option>
+          <option value="400000">Do $400K</option>
+          <option value="800000">Do $800K</option>
+        </select>
+        <select id="sortSelect" aria-label="Sortowanie">
+          <option value="featured">Polecane</option>
+          <option value="priceAsc">Cena: od najniższej</option>
+          <option value="priceDesc">Cena: od najwyższej</option>
+          <option value="name">Nazwa A–Z</option>
+        </select>
+        <button id="resetFilters" class="reset-btn" type="button">Wyczyść</button>
+      </div>
+
+      <div class="category-row" id="categoryChips"></div>
+
+      <div class="car-grid" id="carGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <strong>Brak pojazdów</strong>
+        <span>Zmień wyszukiwanie albo filtry.</span>
       </div>
     </section>
 
-    <section class="catalog" id="catalog">
-      <div class="section-head"><div><p class="eyebrow">KATALOG</p><h2>Wybierz swój następny samochód</h2></div><div id="resultCount" class="result-count"></div></div>
-      <div class="toolbar">
-        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Szukaj marki, modelu lub ID…" autocomplete="off"></label>
-        <select id="brandFilter" aria-label="Marka"><option value="">Wszystkie marki</option></select>
-        <select id="sortSelect" aria-label="Sortowanie"><option value="featured">Polecane</option><option value="priceAsc">Cena: rosnąco</option><option value="priceDesc">Cena: malejąco</option><option value="name">Nazwa A–Z</option></select>
+    <section class="how-section" id="how">
+      <div class="how-head">
+        <span class="kicker">ZAKUP W GRZE</span>
+        <h2>Wybierasz tutaj.<br>Odbierasz w Chicago.</h2>
       </div>
-      <div class="chips" id="categoryChips"></div>
-      <div class="grid" id="carGrid"></div>
-      <div class="empty" id="emptyState" hidden><h3>Brak wyników</h3><p>Zmień filtr albo wpisz inną nazwę.</p></div>
-    </section>
-
-    <section class="how" id="how">
-      <div class="how-copy"><p class="eyebrow">ZAKUP W GRZE</p><h2>Katalog w przeglądarce.<br>Odbiór w Chicago.</h2><p>Na stronie wybierasz model i zapamiętujesz jego ID. W salonie podajesz ID sprzedawcy NPC, wybierasz formę płatności, a pojazd odbierasz w strefie wydania.</p></div>
-      <div class="steps"><div><b>01</b><h3>Wybierz pojazd</h3><p>Filtruj po kategorii, marce i cenie.</p></div><div><b>02</b><h3>Zapisz ID</h3><p>Każdy model ma kod HSC-XXX.</p></div><div><b>03</b><h3>Kup u NPC</h3><p>Gotówka lub konto bankowe — zależnie od systemu w grze.</p></div></div>
+      <div class="steps">
+        <article><b>01</b><h3>Znajdź pojazd</h3><p>Użyj wyszukiwarki i filtrów, aby znaleźć odpowiedni model.</p></article>
+        <article><b>02</b><h3>Zapisz ID</h3><p>Każdy pojazd ma unikalny kod HSC-XXX widoczny na karcie.</p></article>
+        <article><b>03</b><h3>Kup u sprzedawcy</h3><p>W salonie podajesz ID i wybierasz dostępną formę płatności.</p></article>
+        <article><b>04</b><h3>Odbierz auto</h3><p>Po zakupie pojazd trafia do strefy wydania dealera.</p></article>
+      </div>
     </section>
   </main>
 
-  <footer><div><strong>HOOD STORIES CHICAGO</strong><span>Auto Market</span></div><p>Projekt RP • katalog pojazdów</p></footer>
+  <footer>
+    <div><strong>HOOD STORIES CHICAGO</strong><span>Auto Market</span></div>
+    <p>Katalog pojazdów RP</p>
+  </footer>
 
-  <dialog id="carModal" class="modal">
+  <dialog class="vehicle-modal" id="carModal">
     <button class="modal-close" id="modalClose" aria-label="Zamknij">×</button>
-    <div class="modal-image-wrap"><img id="modalImage" alt=""></div>
-    <div class="modal-content">
-      <div class="modal-tags"><span id="modalCategory"></span><span id="modalId"></span></div>
-      <h2 id="modalName"></h2><p class="modal-brand" id="modalBrand"></p>
-      <div class="modal-specs"><div><span>Cena</span><b id="modalPrice"></b></div><div><span>Warianty</span><b id="modalVariants"></b></div><div><span>Kod pojazdu</span><b id="modalCode"></b></div></div>
-      <div class="notice"><b>Jak kupić?</b><p>Zapisz ID pojazdu i użyj go u sprzedawcy w salonie Hood Stories Chicago.</p></div>
+    <div class="modal-image"><img id="modalImage" alt=""></div>
+    <div class="modal-body">
+      <div class="modal-tags">
+        <span id="modalCategory"></span>
+        <span id="modalId"></span>
+      </div>
+      <p class="modal-brand" id="modalBrand"></p>
+      <h2 id="modalName"></h2>
+      <div class="modal-stats">
+        <div><span>Cena</span><strong id="modalPrice"></strong></div>
+        <div><span>Warianty</span><strong id="modalVariants"></strong></div>
+        <div><span>Kod pojazdu</span><strong id="modalCode"></strong></div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="copyId" type="button">Kopiuj ID pojazdu</button>
+        <button class="btn btn-secondary" id="modalCloseBottom" type="button">Zamknij</button>
+      </div>
+      <p class="modal-note">Zapisz ID i użyj go u sprzedawcy NPC w salonie Hood Stories Chicago.</p>
     </div>
   </dialog>
+
   <script src="app.js"></script>
 </body>
 </html>
