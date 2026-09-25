@@ -7,7 +7,7 @@
     "price": 61000,
     "variants": 7,
     "code": "brcc:gol",
-    "image": "assets/cars/img-001-kultowy-hatchback-w-pomaranczowym-swietle.webp",
+    "image": "img-001-kultowy-hatchback-w-pomaranczowym-swietle.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -19,7 +19,7 @@
     "price": 70000,
     "variants": 6,
     "code": "brcc:golf",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -31,7 +31,7 @@
     "price": 188000,
     "variants": 5,
     "code": "brcc:nivus",
-    "image": "assets/cars/img-003-volkswagen-suv-w-kinowym-swietle.webp",
+    "image": "img-003-volkswagen-suv-w-kinowym-swietle.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -43,7 +43,7 @@
     "price": 116000,
     "variants": 9,
     "code": "brcc:opala",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -55,7 +55,7 @@
     "price": 175000,
     "variants": 5,
     "code": "brcc:ram1500",
-    "image": "assets/cars/img-005-ram-1500-w-zotym-swietle.webp",
+    "image": "img-005-ram-1500-w-zotym-swietle.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -67,7 +67,7 @@
     "price": 191000,
     "variants": 4,
     "code": "brcc:s10",
-    "image": "assets/cars/img-006-chevrolet-s10-max-w-studiu-i-swiatach.webp",
+    "image": "img-006-chevrolet-s10-max-w-studiu-i-swiatach.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -79,7 +79,7 @@
     "price": 272000,
     "variants": 5,
     "code": "brcc:sw4",
-    "image": "assets/cars/img-007-biaa-toyota-rav4-w-kinowym-studiu.webp",
+    "image": "img-007-biaa-toyota-rav4-w-kinowym-studiu.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -91,7 +91,7 @@
     "price": 124000,
     "variants": 6,
     "code": "brcc:uno",
-    "image": "assets/cars/img-008-wokselowy-hatchback-w-pomaranczowym-swietle.webp",
+    "image": "img-008-wokselowy-hatchback-w-pomaranczowym-swietle.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -103,7 +103,7 @@
     "price": 91000,
     "variants": 2,
     "code": "brcc:uno_van",
-    "image": "assets/cars/img-009-wokselowy-klasyczny-kombi-w-pomaranczowym-swietle.webp",
+    "image": "img-009-wokselowy-klasyczny-kombi-w-pomaranczowym-swietle.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false
   },
@@ -115,7 +115,7 @@
     "price": 142000,
     "variants": 22,
     "code": "unupmc:unupmc_vehicle_pmc_concord_sedan",
-    "image": "assets/cars/img-010-luksusowy-sedan-voxel-w-oranzowej-mgle.webp",
+    "image": "img-010-luksusowy-sedan-voxel-w-oranzowej-mgle.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -127,7 +127,7 @@
     "price": 151000,
     "variants": 12,
     "code": "unupmc:unupmc_vehicle_pmc_concord_wagon",
-    "image": "assets/cars/img-011-klasyczny-kremowy-kombi-w-neonowym-studiu.webp",
+    "image": "img-011-klasyczny-kremowy-kombi-w-neonowym-studiu.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -139,7 +139,7 @@
     "price": 52000,
     "variants": 8,
     "code": "unupmc:unupmc_vehicle_pmc_freightmaster",
-    "image": "assets/cars/img-012-masywny-pickup-w-mrocznym-studiu.webp",
+    "image": "img-012-masywny-pickup-w-mrocznym-studiu.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -151,7 +151,7 @@
     "price": 191000,
     "variants": 4,
     "code": "unucowley:unucowley_vehicle_unucowley_delivery_pickup",
-    "image": "assets/cars/img-013-potezny-pickup-w-triptyku-studia-motoryzacyjnego.webp",
+    "image": "img-013-potezny-pickup-w-triptyku-studia-motoryzacyjnego.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -163,7 +163,7 @@
     "price": 78000,
     "variants": 6,
     "code": "unucowley:unucowley_vehicle_unucowley_delivery_van",
-    "image": "assets/cars/img-014-srebrny-van-w-kinowym-studiu.webp",
+    "image": "img-014-srebrny-van-w-kinowym-studiu.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -175,7 +175,7 @@
     "price": 79000,
     "variants": 8,
     "code": "unufuchu:unufuchu_vehicle_unufuchu_mogura",
-    "image": "assets/cars/img-009-wokselowy-klasyczny-kombi-w-pomaranczowym-swietle.webp",
+    "image": "img-009-wokselowy-klasyczny-kombi-w-pomaranczowym-swietle.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -187,7 +187,7 @@
     "price": 127000,
     "variants": 8,
     "code": "unugnr:gnr_vehicle_rw_type1_coupe",
-    "image": "assets/cars/img-015-klasyczne-coupe-w-mrocznym-studio.webp",
+    "image": "img-015-klasyczne-coupe-w-mrocznym-studio.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
     "featured": false
   },
@@ -199,7 +199,7 @@
     "price": 470000,
     "variants": 3,
     "code": "new_cars:lamborghini_huracan_sterrato",
-    "image": "assets/cars/img-016-lamborghini-huracan-w-filmowym-studio.webp",
+    "image": "img-016-lamborghini-huracan-w-filmowym-studio.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -211,7 +211,7 @@
     "price": 145000,
     "variants": 3,
     "code": "new_cars:ford_mustang_2024",
-    "image": "assets/cars/img-017-biaa-mustang-cabrio-w-kinowym-studiu.webp",
+    "image": "img-017-biaa-mustang-cabrio-w-kinowym-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -223,7 +223,7 @@
     "price": 146000,
     "variants": 3,
     "code": "new_cars:aston_martin_dbx",
-    "image": "assets/cars/img-018-luksusowy-suv-w-swietle-studyjnym.webp",
+    "image": "img-018-luksusowy-suv-w-swietle-studyjnym.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -235,7 +235,7 @@
     "price": 78000,
     "variants": 3,
     "code": "new_cars:aston_martin_vantage",
-    "image": "assets/cars/img-019-grafitowe-coupe-w-kinowym-swietle.webp",
+    "image": "img-019-grafitowe-coupe-w-kinowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -247,7 +247,7 @@
     "price": 133000,
     "variants": 3,
     "code": "new_cars:audi_e_tron_gt",
-    "image": "assets/cars/img-020-audi-e-tron-w-mrocznym-studio.webp",
+    "image": "img-020-audi-e-tron-w-mrocznym-studio.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -259,7 +259,7 @@
     "price": 209000,
     "variants": 3,
     "code": "new_cars:audi_q8",
-    "image": "assets/cars/img-021-luksusowy-suv-w-kinowym-showroomie.webp",
+    "image": "img-021-luksusowy-suv-w-kinowym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -271,7 +271,7 @@
     "price": 466000,
     "variants": 3,
     "code": "new_cars:audi_r8",
-    "image": "assets/cars/img-022-luksusowe-audi-r8-w-studio.webp",
+    "image": "img-022-luksusowe-audi-r8-w-studio.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -283,7 +283,7 @@
     "price": 52000,
     "variants": 3,
     "code": "new_cars:audi_rs3",
-    "image": "assets/cars/img-023-audi-rs3-w-mrocznym-studio.webp",
+    "image": "img-023-audi-rs3-w-mrocznym-studio.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -295,7 +295,7 @@
     "price": 272000,
     "variants": 3,
     "code": "new_cars:bentley_bentayga",
-    "image": "assets/cars/img-024-luksusowy-bentley-w-swietle-showroomu.webp",
+    "image": "img-024-luksusowy-bentley-w-swietle-showroomu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -307,7 +307,7 @@
     "price": 410000,
     "variants": 3,
     "code": "new_cars:bentley_continental_gtspeed_2024",
-    "image": "assets/cars/img-024-luksusowy-bentley-w-swietle-showroomu.webp",
+    "image": "img-024-luksusowy-bentley-w-swietle-showroomu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -319,7 +319,7 @@
     "price": 79000,
     "variants": 3,
     "code": "new_cars:bentley_flying_2020",
-    "image": "assets/cars/img-025-elegancka-grafitowa-limuzyna-w-studiu.webp",
+    "image": "img-025-elegancka-grafitowa-limuzyna-w-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -331,7 +331,7 @@
     "price": 88000,
     "variants": 3,
     "code": "new_cars:bmw_3er",
-    "image": "assets/cars/img-026-luksusowe-bmw-w-bursztynowym-swietle.webp",
+    "image": "img-026-luksusowe-bmw-w-bursztynowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -343,7 +343,7 @@
     "price": 179000,
     "variants": 3,
     "code": "new_cars:bmw_m4",
-    "image": "assets/cars/img-027-biae-bmw-m4-w-futurystycznym-showroomie.webp",
+    "image": "img-027-biae-bmw-m4-w-futurystycznym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -355,7 +355,7 @@
     "price": 188000,
     "variants": 3,
     "code": "new_cars:bmw_x6m",
-    "image": "assets/cars/img-028-luksusowe-bmw-w-trzech-odsonach.webp",
+    "image": "img-028-luksusowe-bmw-w-trzech-odsonach.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -367,7 +367,7 @@
     "price": 213000,
     "variants": 3,
     "code": "new_cars:bmw_z4",
-    "image": "assets/cars/img-029-biaa-bmw-z4-w-luksusowym-studiu.webp",
+    "image": "img-029-biaa-bmw-z4-w-luksusowym-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -379,7 +379,7 @@
     "price": 230000,
     "variants": 3,
     "code": "new_cars:cadillac_escalade_2019",
-    "image": "assets/cars/img-030-luksusowy-cadillac-escalade-w-swietle-bursztynu.webp",
+    "image": "img-030-luksusowy-cadillac-escalade-w-swietle-bursztynu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -391,7 +391,7 @@
     "price": 251000,
     "variants": 3,
     "code": "new_cars:cadillac_escalade_2022",
-    "image": "assets/cars/img-031-luksusowy-cadillac-w-kinowej-scenerii.webp",
+    "image": "img-031-luksusowy-cadillac-w-kinowej-scenerii.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -403,7 +403,7 @@
     "price": 264000,
     "variants": 3,
     "code": "new_cars:chevrolet_camaro",
-    "image": "assets/cars/img-032-biay-chevrolet-camaro-ss-w-kinowej-scenerii.webp",
+    "image": "img-032-biay-chevrolet-camaro-ss-w-kinowej-scenerii.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -415,7 +415,7 @@
     "price": 281000,
     "variants": 3,
     "code": "new_cars:dodge_challenger_demon",
-    "image": "assets/cars/img-033-dodge-challenger-w-bursztynowym-swietle.webp",
+    "image": "img-033-dodge-challenger-w-bursztynowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -427,7 +427,7 @@
     "price": 145000,
     "variants": 3,
     "code": "new_cars:dodge_charger_hellcat",
-    "image": "assets/cars/img-034-czarny-muscle-car-w-kinowym-swietle.webp",
+    "image": "img-034-czarny-muscle-car-w-kinowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -439,7 +439,7 @@
     "price": 560000,
     "variants": 3,
     "code": "new_cars:ferrari_12cilindri",
-    "image": "assets/cars/img-035-ferrari-grand-touring-reimagined.webp",
+    "image": "img-035-ferrari-grand-touring-reimagined.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -451,7 +451,7 @@
     "price": 70000,
     "variants": 3,
     "code": "new_cars:ferrari_purosangue",
-    "image": "assets/cars/img-036-luksusowa-triada-ferrari-design-i-osiagi.webp",
+    "image": "img-036-luksusowa-triada-ferrari-design-i-osiagi.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -463,7 +463,7 @@
     "price": 620000,
     "variants": 3,
     "code": "new_cars:ferrari_sf90_stradale",
-    "image": "assets/cars/img-037-ferrari-czysta-emocja-w-ruchu.webp",
+    "image": "img-037-ferrari-czysta-emocja-w-ruchu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -475,7 +475,7 @@
     "price": 175000,
     "variants": 3,
     "code": "new_cars:ford_raptor",
-    "image": "assets/cars/img-038-potezny-ford-raptor-w-industrialnym-studiu.webp",
+    "image": "img-038-potezny-ford-raptor-w-industrialnym-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -487,7 +487,7 @@
     "price": 790000,
     "variants": 3,
     "code": "new_cars:hennessey_venom_f5",
-    "image": "assets/cars/img-039-futurystyczny-hipersamochod-w-swietle-amber.webp",
+    "image": "img-039-futurystyczny-hipersamochod-w-swietle-amber.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -499,7 +499,7 @@
     "price": 760000,
     "variants": 3,
     "code": "new_cars:koenigsegg_regera",
-    "image": "assets/cars/img-040-supersamochod-w-dymnym-showroomie.webp",
+    "image": "img-040-supersamochod-w-dymnym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -511,7 +511,7 @@
     "price": 610000,
     "variants": 3,
     "code": "new_cars:lamborghini_aventador_svj",
-    "image": "assets/cars/img-041-trojpanelowa-wizja-biaego-supersamochodu.webp",
+    "image": "img-041-trojpanelowa-wizja-biaego-supersamochodu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -523,7 +523,7 @@
     "price": 293000,
     "variants": 3,
     "code": "new_cars:lamborghini_urus",
-    "image": "assets/cars/img-042-kinematograficzny-suv-w-triptyku.webp",
+    "image": "img-042-kinematograficzny-suv-w-triptyku.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -535,7 +535,7 @@
     "price": 125000,
     "variants": 3,
     "code": "new_cars:land_rover_2022",
-    "image": "assets/cars/img-043-elegancki-suv-w-studyjnym-swietle.webp",
+    "image": "img-043-elegancki-suv-w-studyjnym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -547,7 +547,7 @@
     "price": 430000,
     "variants": 3,
     "code": "new_cars:maserati_mc20",
-    "image": "assets/cars/img-044-maserati-w-trzech-kinowych-ujeciach.webp",
+    "image": "img-044-maserati-w-trzech-kinowych-ujeciach.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -559,7 +559,7 @@
     "price": 520000,
     "variants": 3,
     "code": "new_cars:mclaren_600lt",
-    "image": "assets/cars/img-045-mroczny-supercar-w-swietle-reflektorow.webp",
+    "image": "img-045-mroczny-supercar-w-swietle-reflektorow.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -571,7 +571,7 @@
     "price": 590000,
     "variants": 3,
     "code": "new_cars:mclaren_720s",
-    "image": "assets/cars/img-046-luksusowy-supercar-w-trzech-ujeciach.webp",
+    "image": "img-046-luksusowy-supercar-w-trzech-ujeciach.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -583,7 +583,7 @@
     "price": 213000,
     "variants": 3,
     "code": "new_cars:mercedes_amg_gt_2024",
-    "image": "assets/cars/img-047-mercedes-amg-gt-w-kinowym-studio.webp",
+    "image": "img-047-mercedes-amg-gt-w-kinowym-studio.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -595,7 +595,7 @@
     "price": 70000,
     "variants": 3,
     "code": "new_cars:mercedes_g63_brabus",
-    "image": "assets/cars/img-048-luksusowy-brabus-g-wagon-w-studiu.webp",
+    "image": "img-048-luksusowy-brabus-g-wagon-w-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -607,7 +607,7 @@
     "price": 79000,
     "variants": 3,
     "code": "new_cars:mercedes_c63",
-    "image": "assets/cars/img-049-mercedes-amg-w-zotym-swietle.webp",
+    "image": "img-049-mercedes-amg-w-zotym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -619,7 +619,7 @@
     "price": 88000,
     "variants": 3,
     "code": "new_cars:mercedes_v_class",
-    "image": "assets/cars/img-014-srebrny-van-w-kinowym-studiu.webp",
+    "image": "img-014-srebrny-van-w-kinowym-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -631,7 +631,7 @@
     "price": 281000,
     "variants": 3,
     "code": "new_cars:nissan_z",
-    "image": "assets/cars/img-050-nissan-z-w-mrocznym-studio.webp",
+    "image": "img-050-nissan-z-w-mrocznym-studio.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -643,7 +643,7 @@
     "price": 145000,
     "variants": 3,
     "code": "new_cars:porsche_911_turbo_s",
-    "image": "assets/cars/img-051-tryptyk-porsche-911-w-bursztynowym-studio.webp",
+    "image": "img-051-tryptyk-porsche-911-w-bursztynowym-studio.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true
   },
@@ -655,7 +655,7 @@
     "price": 146000,
     "variants": 3,
     "code": "new_cars:porsche_cayenne_turbo_gt",
-    "image": "assets/cars/img-052-luksusowy-suv-w-kinicznym-studiu.webp",
+    "image": "img-052-luksusowy-suv-w-kinicznym-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -667,7 +667,7 @@
     "price": 124000,
     "variants": 3,
     "code": "new_cars:porsche_panamera",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -679,7 +679,7 @@
     "price": 133000,
     "variants": 3,
     "code": "new_cars:porsche_taycan",
-    "image": "assets/cars/img-053-luksusowy-elektryczny-porsche-w-studiu-batymetrycz.webp",
+    "image": "img-053-luksusowy-elektryczny-porsche-w-studiu-batymetrycz.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -691,7 +691,7 @@
     "price": 480000,
     "variants": 3,
     "code": "new_cars:rolls_royce_spectre",
-    "image": "assets/cars/img-025-elegancka-grafitowa-limuzyna-w-studiu.webp",
+    "image": "img-025-elegancka-grafitowa-limuzyna-w-studiu.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -703,7 +703,7 @@
     "price": 143000,
     "variants": 3,
     "code": "new_cars:shelby_supersnake_2024",
-    "image": "assets/cars/img-013-potezny-pickup-w-triptyku-studia-motoryzacyjnego.webp",
+    "image": "img-013-potezny-pickup-w-triptyku-studia-motoryzacyjnego.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -715,7 +715,7 @@
     "price": 52000,
     "variants": 3,
     "code": "new_cars:tesla_3",
-    "image": "assets/cars/img-054-tesla-w-bursztynowym-swietle.webp",
+    "image": "img-054-tesla-w-bursztynowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -727,7 +727,7 @@
     "price": 61000,
     "variants": 3,
     "code": "new_cars:tesla_s_plaid",
-    "image": "assets/cars/img-055-luksusowa-tesla-w-swietle-bursztynowych-reflektoro.webp",
+    "image": "img-055-luksusowa-tesla-w-swietle-bursztynowych-reflektoro.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -739,7 +739,7 @@
     "price": 70000,
     "variants": 3,
     "code": "new_cars:tesla_x_plaid",
-    "image": "assets/cars/img-021-luksusowy-suv-w-kinowym-showroomie.webp",
+    "image": "img-021-luksusowy-suv-w-kinowym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false
   },
@@ -751,7 +751,7 @@
     "price": 145000,
     "variants": 3,
     "code": "blockyragecivil:brbmwm3g80",
-    "image": "assets/cars/img-019-grafitowe-coupe-w-kinowym-swietle.webp",
+    "image": "img-019-grafitowe-coupe-w-kinowym-swietle.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -763,7 +763,7 @@
     "price": 171000,
     "variants": 14,
     "code": "blockyragecivil:brbmwe24",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -775,7 +775,7 @@
     "price": 740000,
     "variants": 14,
     "code": "blockyragecivil:brbugattilvn",
-    "image": "assets/cars/img-040-supersamochod-w-dymnym-showroomie.webp",
+    "image": "img-040-supersamochod-w-dymnym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": true
   },
@@ -787,7 +787,7 @@
     "price": 106000,
     "variants": 15,
     "code": "blockyragecivil:brfiattipo",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -799,7 +799,7 @@
     "price": 115000,
     "variants": 1,
     "code": "blockyragecivil:brfiattipopolice",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -811,7 +811,7 @@
     "price": 230000,
     "variants": 14,
     "code": "blockyragecivil:brkiasorento2019",
-    "image": "assets/cars/img-018-luksusowy-suv-w-swietle-studyjnym.webp",
+    "image": "img-018-luksusowy-suv-w-swietle-studyjnym.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -823,7 +823,7 @@
     "price": 105000,
     "variants": 15,
     "code": "blockyragecivil:brmercedesw124",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -835,7 +835,7 @@
     "price": 264000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2005_proto",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -847,7 +847,7 @@
     "price": 281000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2007",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -859,7 +859,7 @@
     "price": 145000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2010",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -871,7 +871,7 @@
     "price": 162000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2015_nismo",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -883,7 +883,7 @@
     "price": 179000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -895,7 +895,7 @@
     "price": 196000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2017_nismo",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": true
   },
@@ -907,7 +907,7 @@
     "price": 213000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2024",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -919,7 +919,7 @@
     "price": 230000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2024_nismo",
-    "image": "assets/cars/img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
+    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -931,7 +931,7 @@
     "price": 83000,
     "variants": 15,
     "code": "blockyragecivil:brporsche911930",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -943,7 +943,7 @@
     "price": 94000,
     "variants": 14,
     "code": "blockyragecivil:brporscheslantnose911930",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -955,7 +955,7 @@
     "price": 105000,
     "variants": 14,
     "code": "blockyragecivil:brporsche911carrera",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -967,7 +967,7 @@
     "price": 116000,
     "variants": 14,
     "code": "blockyragecivil:brporsche911_targa_carrera",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -979,7 +979,7 @@
     "price": 142000,
     "variants": 16,
     "code": "blockyragecivil:brteslacybertruck",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -991,7 +991,7 @@
     "price": 167000,
     "variants": 14,
     "code": "blockyragecivil:brteslamodelx",
-    "image": "assets/cars/img-018-luksusowy-suv-w-swietle-studyjnym.webp",
+    "image": "img-018-luksusowy-suv-w-swietle-studyjnym.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1003,7 +1003,7 @@
     "price": 52000,
     "variants": 14,
     "code": "blockyragecivil:brtoyotaaurionxv40",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1015,7 +1015,7 @@
     "price": 61000,
     "variants": 14,
     "code": "blockyragecivil:brtoyotacamryxv40",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1027,7 +1027,7 @@
     "price": 171000,
     "variants": 14,
     "code": "blockyragecivil:brgolf1",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1039,7 +1039,7 @@
     "price": 182000,
     "variants": 14,
     "code": "blockyragecivil:brgolf1gtipirelli",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1051,7 +1051,7 @@
     "price": 88000,
     "variants": 14,
     "code": "blockyragecivil:brvolvos603rdgen",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1063,7 +1063,7 @@
     "price": 97000,
     "variants": 14,
     "code": "blockyragecivil:brvolvos603rdgen_polestar",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1075,7 +1075,7 @@
     "price": 106000,
     "variants": 14,
     "code": "blockyragecivil:brvolvos603rrdgen_rdesign",
-    "image": "assets/cars/img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1087,7 +1087,7 @@
     "price": 105000,
     "variants": 13,
     "code": "blockyragecivil:brzaz1102",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false
   },
@@ -1099,7 +1099,7 @@
     "price": 116000,
     "variants": 11,
     "code": "gtcraft:mazda_fc3s",
-    "image": "assets/cars/img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1111,7 +1111,7 @@
     "price": 127000,
     "variants": 7,
     "code": "gtcraft:mazda_fd3s_late",
-    "image": "assets/cars/img-015-klasyczne-coupe-w-mrocznym-studio.webp",
+    "image": "img-015-klasyczne-coupe-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1123,7 +1123,7 @@
     "price": 138000,
     "variants": 8,
     "code": "gtcraft:nissan_180sx",
-    "image": "assets/cars/img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
+    "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1135,7 +1135,7 @@
     "price": 149000,
     "variants": 7,
     "code": "gtcraft:nissan_bcnr33",
-    "image": "assets/cars/img-058-nissan-skyline-gt-r-r33-w-kinowym-blasku.webp",
+    "image": "img-058-nissan-skyline-gt-r-r33-w-kinowym-blasku.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": true
   },
@@ -1147,7 +1147,7 @@
     "price": 160000,
     "variants": 7,
     "code": "gtcraft:nissan_bnr32",
-    "image": "assets/cars/img-059-nissan-skyline-r32-w-mrocznym-studio.webp",
+    "image": "img-059-nissan-skyline-r32-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1159,7 +1159,7 @@
     "price": 171000,
     "variants": 11,
     "code": "gtcraft:nissan_bnr34",
-    "image": "assets/cars/img-060-biaa-legenda-skyline-gt-r-r34.webp",
+    "image": "img-060-biaa-legenda-skyline-gt-r-r34.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": true
   },
@@ -1171,7 +1171,7 @@
     "price": 182000,
     "variants": 8,
     "code": "gtcraft:nissan_s13",
-    "image": "assets/cars/img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
+    "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1183,7 +1183,7 @@
     "price": 72000,
     "variants": 8,
     "code": "gtcraft:nissan_s14",
-    "image": "assets/cars/img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
+    "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1195,7 +1195,7 @@
     "price": 83000,
     "variants": 7,
     "code": "gtcraft:nissan_s15",
-    "image": "assets/cars/img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
+    "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1207,7 +1207,7 @@
     "price": 97000,
     "variants": 6,
     "code": "gtcraft:subaru_gc8v6",
-    "image": "assets/cars/img-061-subaru-impreza-wrx-sti-w-studyjnym-blasku.webp",
+    "image": "img-061-subaru-impreza-wrx-sti-w-studyjnym-blasku.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1219,7 +1219,7 @@
     "price": 105000,
     "variants": 7,
     "code": "gtcraft:toyota_ae86_trueno",
-    "image": "assets/cars/img-062-toyota-ae86-w-pomaranczowym-blasku.webp",
+    "image": "img-062-toyota-ae86-w-pomaranczowym-blasku.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false
   },
@@ -1231,7 +1231,7 @@
     "price": 213000,
     "variants": 7,
     "code": "gtcraft:toyota_a80",
-    "image": "assets/cars/img-063-supra-mk4-w-pomaranczowym-blasku.webp",
+    "image": "img-063-supra-mk4-w-pomaranczowym-blasku.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": true
   },
@@ -1243,7 +1243,7 @@
     "price": 28000,
     "variants": 1,
     "code": "extra:adventure_motorcycle",
-    "image": "assets/cars/img-064-motocykl-adventure-w-industrialnym-studio.webp",
+    "image": "img-064-motocykl-adventure-w-industrialnym-studio.webp",
     "sourcePack": "Extra",
     "featured": false
   },
@@ -1255,7 +1255,7 @@
     "price": 37000,
     "variants": 1,
     "code": "extra:naked_motorcycle",
-    "image": "assets/cars/img-065-motocykl-naked-w-swietle-noir.webp",
+    "image": "img-065-motocykl-naked-w-swietle-noir.webp",
     "sourcePack": "Extra",
     "featured": false
   },
@@ -1267,7 +1267,7 @@
     "price": 46000,
     "variants": 1,
     "code": "extra:sport_motorcycle",
-    "image": "assets/cars/img-066-triptyk-sportowego-kawasaki-w-studiu.webp",
+    "image": "img-066-triptyk-sportowego-kawasaki-w-studiu.webp",
     "sourcePack": "Extra",
     "featured": false
   },
@@ -1279,7 +1279,7 @@
     "price": 2200,
     "variants": 1,
     "code": "extra:city_bicycle",
-    "image": "assets/cars/img-067-bekitny-rower-w-kinowym-studio.webp",
+    "image": "img-067-bekitny-rower-w-kinowym-studio.webp",
     "sourcePack": "Extra",
     "featured": false
   },
@@ -1291,7 +1291,7 @@
     "price": 24000,
     "variants": 1,
     "code": "extra:atv",
-    "image": "assets/cars/img-068-futurystyczna-prezentacja-quada-atv.webp",
+    "image": "img-068-futurystyczna-prezentacja-quada-atv.webp",
     "sourcePack": "Extra",
     "featured": false
   }
