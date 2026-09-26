@@ -22,7 +22,7 @@ function spriteXY(index){return {x:index%4,y:Math.floor(index/4)}}
 function mediaHTML(c,extra=''){
   if(Number.isInteger(c.spriteIndex)){
     const p=spriteXY(c.spriteIndex);
-    return '<div class="sprite '+extra+'" style="--sx:'+p.x+';--sy:'+p.y+'" role="img" aria-label="'+esc(c.name)+'"></div>';
+    return '<div class="sprite '+extra+'" style="background-position:'+(p.x*33.333333)+'% '+(p.y*33.333333)+'%;" role="img" aria-label="'+esc(c.name)+'"></div>';
   }
   return '<img class="'+extra+'" src="'+esc(c.image)+'" alt="'+esc(c.name)+'" loading="lazy" decoding="async">';
 }
@@ -121,4 +121,4 @@ $('#copyId').onclick=async()=>{if(!currentCar)return;try{await navigator.clipboa
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.open&&document.activeElement===search){search.value='';renderCars()}});
 const back=$('#backTop');window.addEventListener('scroll',()=>back.classList.toggle('show',scrollY>700),{passive:true});back.onclick=()=>scrollTo({top:0,behavior:'smooth'});
 
-fetch('cars.json?v=4',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Nie udało się pobrać cars.json');return r.json()}).then(init).catch(err=>{console.error(err);count.textContent='Błąd ładowania katalogu';grid.innerHTML='<div class="empty-state"><strong>Nie udało się załadować katalogu.</strong><span>Odśwież stronę po chwili.</span></div>'});
+fetch('cars.json?v=5',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Nie udało się pobrać cars.json');return r.json()}).then(init).catch(err=>{console.error(err);count.textContent='Błąd ładowania katalogu';grid.innerHTML='<div class="empty-state"><strong>Nie udało się załadować katalogu.</strong><span>Odśwież stronę po chwili.</span></div>'});
