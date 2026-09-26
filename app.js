@@ -121,4 +121,4 @@ $('#copyId').onclick=async()=>{if(!currentCar)return;try{await navigator.clipboa
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.open&&document.activeElement===search){search.value='';renderCars()}});
 const back=$('#backTop');window.addEventListener('scroll',()=>back.classList.toggle('show',scrollY>700),{passive:true});back.onclick=()=>scrollTo({top:0,behavior:'smooth'});
 
-fetch('cars.json?v=5',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Nie udało się pobrać cars.json');return r.json()}).then(init).catch(err=>{console.error(err);count.textContent='Błąd ładowania katalogu';grid.innerHTML='<div class="empty-state"><strong>Nie udało się załadować katalogu.</strong><span>Odśwież stronę po chwili.</span></div>'});
+fetch('cars.json?v=6',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Nie udało się pobrać cars.json');return r.json()}).then(init).catch(err=>{console.error(err);count.textContent='Błąd ładowania katalogu';grid.innerHTML='<div class="empty-state"><strong>Nie udało się załadować katalogu.</strong><span>Odśwież stronę po chwili.</span></div>'});
