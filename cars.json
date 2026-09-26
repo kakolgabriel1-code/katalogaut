@@ -76,12 +76,13 @@
     "name": "SW4",
     "brand": "Toyota",
     "category": "SUV",
-    "price": 272000,
+    "price": 470000,
     "variants": 5,
     "code": "brcc:sw4",
     "image": "img-007-biaa-toyota-rav4-w-kinowym-studiu.webp",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-008",
@@ -121,15 +122,16 @@
   },
   {
     "id": "HSC-013",
-    "name": "UNU-Cowley Pard Delivery (Pickup) (Ivory)",
-    "brand": "UNU",
+    "name": "Ford Raptor",
+    "brand": "Ford",
     "category": "Pickup",
-    "price": 191000,
+    "price": 875000,
     "variants": 4,
     "code": "unucowley:unucowley_vehicle_unucowley_delivery_pickup",
     "image": "img-013-potezny-pickup-w-triptyku-studia-motoryzacyjnego.webp",
     "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-015",
@@ -145,39 +147,42 @@
   },
   {
     "id": "HSC-019",
-    "name": "White Aston Martin DBX",
-    "brand": "Aston Martin",
+    "name": "White Bentley Bentayga",
+    "brand": "Bentley",
     "category": "SUV",
     "price": 146000,
     "variants": 3,
     "code": "new_cars:aston_martin_dbx",
     "image": "img-018-luksusowy-suv-w-swietle-studyjnym.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-021",
-    "name": "White Audi E-Tron GT",
+    "name": "White Audi e-tron GT",
     "brand": "Audi",
     "category": "Sedan / miejskie",
-    "price": 133000,
+    "price": 600000,
     "variants": 3,
     "code": "new_cars:audi_e_tron_gt",
     "image": "img-020-audi-e-tron-w-mrocznym-studio.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-022",
-    "name": "White Audi Q8 E-tron",
+    "name": "White Audi Q8 e-tron",
     "brand": "Audi",
     "category": "SUV",
     "price": 209000,
     "variants": 3,
     "code": "new_cars:audi_q8",
-    "image": "img-021-luksusowy-suv-w-kinowym-showroomie.webp",
+    "image": "assets/updated/audi-q8-etron.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-023",
@@ -196,12 +201,13 @@
     "name": "White Audi RS3",
     "brand": "Audi",
     "category": "Sedan / miejskie",
-    "price": 52000,
+    "price": 620000,
     "variants": 3,
     "code": "new_cars:audi_rs3",
     "image": "img-023-audi-rs3-w-mrocznym-studio.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": true
+    "featured": true,
+    "updated": true
   },
   {
     "id": "HSC-025",
@@ -220,48 +226,52 @@
     "name": "White Bentley Continental GT Speed 2024",
     "brand": "Bentley",
     "category": "Sedan / miejskie",
-    "price": 410000,
+    "price": 890000,
     "variants": 3,
     "code": "new_cars:bentley_continental_gtspeed_2024",
     "image": "img-024-luksusowy-bentley-w-swietle-showroomu.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-028",
-    "name": "White BMW 3er Limusine",
+    "name": "White BMW 3er Limousine",
     "brand": "BMW",
     "category": "Sedan / miejskie",
     "price": 88000,
     "variants": 3,
     "code": "new_cars:bmw_3er",
-    "image": "img-026-luksusowe-bmw-w-bursztynowym-swietle.webp",
+    "image": "img-028-luksusowe-bmw-w-trzech-odsonach.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-029",
     "name": "White BMW M4 Competition-Package",
     "brand": "BMW",
     "category": "Sportowe",
-    "price": 179000,
+    "price": 700000,
     "variants": 3,
     "code": "new_cars:bmw_m4",
     "image": "img-027-biae-bmw-m4-w-futurystycznym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": true
+    "featured": true,
+    "updated": true
   },
   {
     "id": "HSC-030",
     "name": "White BMW X6M",
     "brand": "BMW",
     "category": "SUV",
-    "price": 188000,
+    "price": 900000,
     "variants": 3,
     "code": "new_cars:bmw_x6m",
-    "image": "img-028-luksusowe-bmw-w-trzech-odsonach.webp",
+    "image": "img-026-luksusowe-bmw-w-bursztynowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-031",
@@ -280,60 +290,65 @@
     "name": "White Cadillac Escalade 2019",
     "brand": "Cadillac",
     "category": "SUV",
-    "price": 230000,
+    "price": 430000,
     "variants": 3,
     "code": "new_cars:cadillac_escalade_2019",
     "image": "img-030-luksusowy-cadillac-escalade-w-swietle-bursztynu.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-033",
     "name": "White Cadillac Escalade 2022",
     "brand": "Cadillac",
     "category": "SUV",
-    "price": 251000,
+    "price": 501000,
     "variants": 3,
     "code": "new_cars:cadillac_escalade_2022",
     "image": "img-031-luksusowy-cadillac-w-kinowej-scenerii.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-034",
     "name": "White Chevrolet Camaro ZL1 2023",
     "brand": "Chevrolet",
     "category": "Sportowe",
-    "price": 264000,
+    "price": 699000,
     "variants": 3,
     "code": "new_cars:chevrolet_camaro",
     "image": "img-032-biay-chevrolet-camaro-ss-w-kinowej-scenerii.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-035",
     "name": "White Dodge Challenger DEMON 2023",
     "brand": "Dodge",
     "category": "Sportowe",
-    "price": 281000,
+    "price": 670000,
     "variants": 3,
     "code": "new_cars:dodge_challenger_demon",
     "image": "img-033-dodge-challenger-w-bursztynowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": true
+    "featured": true,
+    "updated": true
   },
   {
     "id": "HSC-038",
     "name": "White Ferrari Purosangue",
     "brand": "Ferrari",
-    "category": "Sedan / miejskie",
-    "price": 70000,
+    "category": "SUV",
+    "price": 800000,
     "variants": 3,
     "code": "new_cars:ferrari_purosangue",
     "image": "img-036-luksusowa-triada-ferrari-design-i-osiagi.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-039",
@@ -352,24 +367,26 @@
     "name": "White Ford Raptor",
     "brand": "Ford",
     "category": "Pickup",
-    "price": 175000,
+    "price": 875000,
     "variants": 3,
     "code": "new_cars:ford_raptor",
     "image": "img-038-potezny-ford-raptor-w-industrialnym-studiu.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-041",
     "name": "White Hennessey Venom F5",
     "brand": "Hennessey",
     "category": "Supercar",
-    "price": 790000,
+    "price": 1000000,
     "variants": 3,
     "code": "new_cars:hennessey_venom_f5",
-    "image": "img-039-futurystyczny-hipersamochod-w-swietle-amber.webp",
+    "image": "assets/updated/hennessey-venom-f5.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": true
+    "featured": true,
+    "updated": true
   },
   {
     "id": "HSC-042",
@@ -379,45 +396,49 @@
     "price": 760000,
     "variants": 3,
     "code": "new_cars:koenigsegg_regera",
-    "image": "img-040-supersamochod-w-dymnym-showroomie.webp",
+    "image": "assets/updated/koenigsegg-regera.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-044",
-    "name": "White Lambroghini Urus",
+    "name": "White Lamborghini Urus",
     "brand": "Lamborghini",
     "category": "SUV",
-    "price": 293000,
+    "price": 1010000,
     "variants": 3,
     "code": "new_cars:lamborghini_urus",
-    "image": "img-042-kinematograficzny-suv-w-triptyku.webp",
+    "image": "assets/updated/lamborghini-urus.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-046",
     "name": "White Maserati MC20",
     "brand": "Maserati",
     "category": "Supercar",
-    "price": 430000,
+    "price": 830000,
     "variants": 3,
     "code": "new_cars:maserati_mc20",
     "image": "img-044-maserati-w-trzech-kinowych-ujeciach.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-048",
     "name": "White McLaren 720S",
     "brand": "McLaren",
     "category": "Supercar",
-    "price": 590000,
+    "price": 990000,
     "variants": 3,
     "code": "new_cars:mclaren_720s",
-    "image": "img-046-luksusowy-supercar-w-trzech-ujeciach.webp",
+    "image": "assets/updated/mclaren-720s.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-049",
@@ -433,15 +454,16 @@
   },
   {
     "id": "HSC-050",
-    "name": "White Mercedes Benz G63 Brabus",
+    "name": "White Mercedes-Benz G63 Brabus",
     "brand": "Mercedes-Benz",
-    "category": "Sedan / miejskie",
-    "price": 70000,
+    "category": "SUV",
+    "price": 1010000,
     "variants": 3,
     "code": "new_cars:mercedes_g63_brabus",
     "image": "img-048-luksusowy-brabus-g-wagon-w-studiu.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": true
+    "featured": true,
+    "updated": true
   },
   {
     "id": "HSC-051",
@@ -463,9 +485,10 @@
     "price": 281000,
     "variants": 3,
     "code": "new_cars:nissan_z",
-    "image": "img-050-nissan-z-w-mrocznym-studio.webp",
+    "image": "assets/updated/nissan-z-2023.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-054",
@@ -484,36 +507,39 @@
     "name": "White Porsche Cayenne Turbo GT",
     "brand": "Porsche",
     "category": "SUV",
-    "price": 146000,
+    "price": 670000,
     "variants": 3,
     "code": "new_cars:porsche_cayenne_turbo_gt",
     "image": "img-052-luksusowy-suv-w-kinicznym-studiu.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-056",
-    "name": "White Posche Panamera Turbos",
+    "name": "White Porsche Panamera Turbo S",
     "brand": "Porsche",
     "category": "Sedan / miejskie",
-    "price": 124000,
+    "price": 774000,
     "variants": 3,
     "code": "new_cars:porsche_panamera",
     "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-057",
-    "name": "White Posche Taycan Turbo S",
+    "name": "White Porsche Taycan Turbo S",
     "brand": "Porsche",
     "category": "Sedan / miejskie",
-    "price": 133000,
+    "price": 738000,
     "variants": 3,
     "code": "new_cars:porsche_taycan",
-    "image": "img-053-luksusowy-elektryczny-porsche-w-studiu-batymetrycz.webp",
+    "image": "assets/updated/porsche-taycan-turbo-s.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-059",
@@ -523,93 +549,75 @@
     "price": 143000,
     "variants": 3,
     "code": "new_cars:shelby_supersnake_2024",
-    "image": "img-013-potezny-pickup-w-triptyku-studia-motoryzacyjnego.webp",
+    "image": "assets/updated/shelby-f150-super-snake.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-060",
-    "name": "White Tesla 3",
+    "name": "White Tesla Model 3",
     "brand": "Tesla",
     "category": "Sedan / miejskie",
-    "price": 52000,
+    "price": 550000,
     "variants": 3,
     "code": "new_cars:tesla_3",
     "image": "img-054-tesla-w-bursztynowym-swietle.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-061",
-    "name": "White Tesla S-Plaid",
+    "name": "White Tesla Model S Plaid",
     "brand": "Tesla",
     "category": "Sedan / miejskie",
-    "price": 61000,
+    "price": 610000,
     "variants": 3,
     "code": "new_cars:tesla_s_plaid",
     "image": "img-055-luksusowa-tesla-w-swietle-bursztynowych-reflektoro.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-062",
-    "name": "White Tesla X-Plaid",
+    "name": "White Tesla Model X Plaid",
     "brand": "Tesla",
-    "category": "Sedan / miejskie",
-    "price": 70000,
+    "category": "SUV",
+    "price": 700000,
     "variants": 3,
     "code": "new_cars:tesla_x_plaid",
     "image": "img-021-luksusowy-suv-w-kinowym-showroomie.webp",
     "sourcePack": "New_Cars4.4",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-064",
     "name": "BMW M635CSi",
     "brand": "BMW",
     "category": "Klasyki / JDM",
-    "price": 171000,
+    "price": 491000,
     "variants": 14,
     "code": "blockyragecivil:brbmwe24",
     "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-065",
-    "name": "Bugatti La Voiture Noire",
-    "brand": "Bugatti",
-    "category": "Supercar",
-    "price": 740000,
-    "variants": 14,
-    "code": "blockyragecivil:brbugattilvn",
-    "image": "img-040-supersamochod-w-dymnym-showroomie.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": true
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-066",
     "name": "Fiat Tipo",
     "brand": "Fiat",
     "category": "Sedan / miejskie",
-    "price": 106000,
+    "price": 256000,
     "variants": 15,
     "code": "blockyragecivil:brfiattipo",
-    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "assets/updated/fiat-tipo.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-067",
-    "name": "Fiat Tipo Police",
-    "brand": "Fiat",
-    "category": "Sedan / miejskie",
-    "price": 115000,
-    "variants": 1,
-    "code": "blockyragecivil:brfiattipopolice",
-    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-068",
@@ -628,120 +636,39 @@
     "name": "Mercedes-Benz W124",
     "brand": "Mercedes-Benz",
     "category": "Klasyki / JDM",
-    "price": 105000,
+    "price": 405000,
     "variants": 15,
     "code": "blockyragecivil:brmercedesw124",
-    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "assets/updated/mercedes-w124.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-070",
-    "name": "Nissan GT-R R35 2005 Proto",
-    "brand": "Nissan",
-    "category": "Sportowe",
-    "price": 264000,
-    "variants": 14,
-    "code": "blockyragecivil:brnissangtrr35_2005_proto",
-    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-071",
-    "name": "Nissan GT-R R35 2007",
-    "brand": "Nissan",
-    "category": "Sportowe",
-    "price": 281000,
-    "variants": 14,
-    "code": "blockyragecivil:brnissangtrr35_2007",
-    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-072",
-    "name": "Nissan GT-R R35 2010",
-    "brand": "Nissan",
-    "category": "Sportowe",
-    "price": 145000,
-    "variants": 14,
-    "code": "blockyragecivil:brnissangtrr35_2010",
-    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-073",
-    "name": "Nissan GT-R R35 2015 Nismo",
-    "brand": "Nissan",
-    "category": "Sportowe",
-    "price": 162000,
-    "variants": 14,
-    "code": "blockyragecivil:brnissangtrr35_2015_nismo",
-    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-074",
-    "name": "Nissan GT-R R35 2017",
-    "brand": "Nissan",
-    "category": "Sportowe",
-    "price": 179000,
-    "variants": 14,
-    "code": "blockyragecivil:brnissangtrr35",
-    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-075",
-    "name": "Nissan GT-R R35 2017 Nismo",
-    "brand": "Nissan",
-    "category": "Sportowe",
-    "price": 196000,
-    "variants": 14,
-    "code": "blockyragecivil:brnissangtrr35_2017_nismo",
-    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": true
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-076",
     "name": "Nissan GT-R R35 2024",
     "brand": "Nissan",
     "category": "Sportowe",
-    "price": 213000,
+    "price": 750000,
     "variants": 14,
     "code": "blockyragecivil:brnissangtrr35_2024",
     "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-077",
-    "name": "Nissan GT-R R35 2024 Nismo",
-    "brand": "Nissan",
-    "category": "Sportowe",
-    "price": 230000,
-    "variants": 14,
-    "code": "blockyragecivil:brnissangtrr35_2024_nismo",
-    "image": "img-056-koncepcyjny-gt-r-w-neonowym-studiu.webp",
-    "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-078",
     "name": "Porsche 911 930 Turbo",
     "brand": "Porsche",
     "category": "Klasyki / JDM",
-    "price": 83000,
+    "price": 483000,
     "variants": 15,
     "code": "blockyragecivil:brporsche911930",
     "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-079",
@@ -783,25 +710,27 @@
     "id": "HSC-082",
     "name": "Tesla Cybertruck",
     "brand": "Tesla",
-    "category": "Sedan / miejskie",
-    "price": 142000,
+    "category": "Pickup",
+    "price": 890000,
     "variants": 16,
     "code": "blockyragecivil:brteslacybertruck",
-    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "assets/updated/tesla-cybertruck.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-083",
     "name": "Tesla Model X",
     "brand": "Tesla",
     "category": "SUV",
-    "price": 167000,
+    "price": 667000,
     "variants": 14,
     "code": "blockyragecivil:brteslamodelx",
-    "image": "img-018-luksusowy-suv-w-swietle-studyjnym.webp",
+    "image": "assets/updated/tesla-model-x.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-084",
@@ -901,15 +830,16 @@
   },
   {
     "id": "HSC-092",
-    "name": "Mazda RX-7 FC3S(White)",
+    "name": "Mazda RX-7 FC3S (White)",
     "brand": "Mazda",
     "category": "Klasyki / JDM",
-    "price": 116000,
+    "price": 816000,
     "variants": 11,
     "code": "gtcraft:mazda_fc3s",
-    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
+    "image": "assets/updated/mazda-rx7-fc3s.webp",
     "sourcePack": "gtcraft-2.0.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-094",
@@ -937,7 +867,7 @@
   },
   {
     "id": "HSC-096",
-    "name": "Nissan BNR32 Skyline GT-R(Grey)",
+    "name": "Nissan BNR32 Skyline GT-R (White)",
     "brand": "Nissan",
     "category": "Klasyki / JDM",
     "price": 160000,
@@ -945,7 +875,8 @@
     "code": "gtcraft:nissan_bnr32",
     "image": "img-059-nissan-skyline-r32-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-097",
@@ -964,48 +895,52 @@
     "name": "Nissan Silvia S13(Green)",
     "brand": "Nissan",
     "category": "Klasyki / JDM",
-    "price": 182000,
+    "price": 634000,
     "variants": 8,
     "code": "gtcraft:nissan_s13",
     "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-099",
     "name": "Nissan Silvia S14(Pearl White)",
     "brand": "Nissan",
     "category": "Klasyki / JDM",
-    "price": 72000,
+    "price": 663000,
     "variants": 8,
     "code": "gtcraft:nissan_s14",
     "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-100",
     "name": "Nissan Silvia S15 Spec.R(White)",
     "brand": "Nissan",
     "category": "Klasyki / JDM",
-    "price": 83000,
+    "price": 691000,
     "variants": 7,
     "code": "gtcraft:nissan_s15",
     "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
     "sourcePack": "gtcraft-2.0.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-101",
     "name": "Subaru Impreza WRX STI Version VI(WorldRally Blue Mica)",
     "brand": "Subaru",
     "category": "Sedan / miejskie",
-    "price": 97000,
+    "price": 848000,
     "variants": 6,
     "code": "gtcraft:subaru_gc8v6",
     "image": "img-061-subaru-impreza-wrx-sti-w-studyjnym-blasku.webp",
     "sourcePack": "gtcraft-2.0.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-102",
@@ -1084,11 +1019,12 @@
     "name": "ATV / Quad",
     "brand": "ATV",
     "category": "ATV",
-    "price": 24000,
+    "price": 390000,
     "variants": 1,
     "code": "extra:atv",
     "image": "img-068-futurystyczna-prezentacja-quada-atv.webp",
     "sourcePack": "Extra",
-    "featured": false
+    "featured": false,
+    "updated": true
   }
 ]
