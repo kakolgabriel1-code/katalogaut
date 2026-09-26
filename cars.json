@@ -395,7 +395,7 @@
     "name": "White Koenigsegg Regera",
     "brand": "Koenigsegg",
     "category": "Supercar",
-    "price": 760000,
+    "price": 1000000,
     "variants": 3,
     "code": "new_cars:koenigsegg_regera",
     "image": "assets/updated/catalog-updates-sprite.webp",
