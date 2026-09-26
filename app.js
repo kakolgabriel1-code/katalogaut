@@ -1,6 +1,7 @@
 let cars=[];
 let activeCategory='Wszystkie';
-let currentModalCar=null;
+let updatedOnly=false;
+let currentCar=null;
 
 const $=s=>document.querySelector(s);
 const grid=$('#carGrid');
@@ -9,163 +10,115 @@ const brand=$('#brandFilter');
 const price=$('#priceFilter');
 const sort=$('#sortSelect');
 const chips=$('#categoryChips');
-const empty=$('#emptyState');
 const count=$('#resultCount');
+const empty=$('#emptyState');
 const modal=$('#carModal');
+const toast=$('#toast');
 
 const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 
-function categories(){
-  return ['Wszystkie',...new Set(cars.map(c=>c.category))];
+function spriteXY(index){return {x:index%4,y:Math.floor(index/4)}}
+function mediaHTML(c,extra=''){
+  if(Number.isInteger(c.spriteIndex)){
+    const p=spriteXY(c.spriteIndex);
+    return '<div class="sprite '+extra+'" style="--sx:'+p.x+';--sy:'+p.y+'" role="img" aria-label="'+esc(c.name)+'"></div>';
+  }
+  return '<img class="'+extra+'" src="'+esc(c.image)+'" alt="'+esc(c.name)+'" loading="lazy" decoding="async">';
 }
 
+function categoryList(){return ['Wszystkie',...new Set(cars.map(c=>c.category))]}
 function renderChips(){
-  chips.innerHTML=categories().map(cat=>{
-    const amount=cat==='Wszystkie'?cars.length:cars.filter(c=>c.category===cat).length;
-    return `<button class="chip ${cat===activeCategory?'active':''}" data-cat="${cat}">${cat} · ${amount}</button>`;
+  chips.innerHTML=categoryList().map(cat=>{
+    const n=cat==='Wszystkie'?cars.length:cars.filter(c=>c.category===cat).length;
+    return '<button type="button" class="chip '+(cat===activeCategory?'active':'')+'" data-cat="'+esc(cat)+'">'+esc(cat)+' · '+n+'</button>'
   }).join('');
-  chips.querySelectorAll('.chip').forEach(btn=>{
-    btn.onclick=()=>{
-      activeCategory=btn.dataset.cat;
-      renderChips();
-      render();
-    };
-  });
+  chips.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderChips();renderCars()});
 }
-
 function fillBrands(){
-  const brands=[...new Set(cars.map(c=>c.brand))].sort((a,b)=>a.localeCompare(b));
-  brand.innerHTML='<option value="">Wszystkie marki</option>'+brands.map(b=>`<option value="${b}">${b}</option>`).join('');
+  const list=[...new Set(cars.map(c=>c.brand))].sort((a,b)=>a.localeCompare(b,'pl'));
+  brand.innerHTML='<option value="">Wszystkie marki</option>'+list.map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join('');
 }
-
-function filteredCars(){
+function priceOK(c){
+  if(!price.value)return true;
+  const [op,val]=price.value.split(':'); const n=Number(val);
+  return op==='lte'?c.price<=n:c.price>=n;
+}
+function filtered(){
   const q=search.value.trim().toLowerCase();
-  const maxPrice=Number(price.value||0);
-
-  const out=cars.filter(c=>{
-    const categoryOk=activeCategory==='Wszystkie'||c.category===activeCategory;
-    const brandOk=!brand.value||c.brand===brand.value;
-    const priceOk=!maxPrice||c.price<=maxPrice;
-    const haystack=`${c.name} ${c.brand} ${c.id} ${c.code||''}`.toLowerCase();
-    const searchOk=!q||haystack.includes(q);
-    return categoryOk&&brandOk&&priceOk&&searchOk;
+  let out=cars.filter(c=>{
+    const hay=(c.name+' '+c.brand+' '+c.id+' '+(c.code||'')).toLowerCase();
+    return (activeCategory==='Wszystkie'||c.category===activeCategory)
+      &&(!brand.value||c.brand===brand.value)
+      &&priceOK(c)
+      &&(!updatedOnly||c.updated)
+      &&(!q||hay.includes(q));
   });
-
-  if(sort.value==='priceAsc') out.sort((a,b)=>a.price-b.price);
-  else if(sort.value==='priceDesc') out.sort((a,b)=>b.price-a.price);
-  else if(sort.value==='name') out.sort((a,b)=>a.name.localeCompare(b.name));
-  else out.sort((a,b)=>(Number(b.featured)-Number(a.featured))||a.id.localeCompare(b.id));
-
+  if(sort.value==='priceDesc')out.sort((a,b)=>b.price-a.price);
+  else if(sort.value==='priceAsc')out.sort((a,b)=>a.price-b.price);
+  else if(sort.value==='name')out.sort((a,b)=>a.name.localeCompare(b.name,'pl'));
+  else out.sort((a,b)=>(Number(b.featured)-Number(a.featured))||(Number(b.updated)-Number(a.updated))||(b.price-a.price));
   return out;
 }
-
-function carCard(c){
-  return `
-    <article class="car-card" data-id="${c.id}" tabindex="0" aria-label="${c.name}">
-      <div class="car-image">
-        <img loading="lazy" src="${c.image}" alt="${c.name}">
-        <span class="car-badge">${c.category}</span>
-      </div>
-      <div class="card-body">
-        <div class="card-meta"><span>${c.brand}</span><span>${c.id}</span></div>
-        <h3>${c.name}</h3>
-        <div class="card-foot">
-          <span class="card-price">${money(c.price)}</span>
-          <span class="card-open">Zobacz auto →</span>
-        </div>
-      </div>
-    </article>`;
+function card(c){
+  return '<article class="car-card" tabindex="0" data-id="'+esc(c.id)+'" aria-label="'+esc(c.name)+'">'
+    +'<div class="card-media">'+mediaHTML(c)
+    +'<div class="card-badges"><span class="badge">'+esc(c.category)+'</span>'+(c.updated?'<span class="badge updated">POPRAWIONE</span>':'')+'</div></div>'
+    +'<div class="card-body"><div class="card-meta"><span>'+esc(c.brand)+'</span><span>'+esc(c.id)+'</span></div>'
+    +'<h3>'+esc(c.name)+'</h3><div class="card-foot"><span class="card-price">'+money(c.price)+' <small>RP</small></span><span class="card-open">Zobacz auto →</span></div></div></article>';
 }
-
-function render(){
-  const list=filteredCars();
-  grid.innerHTML=list.map(carCard).join('');
-  count.textContent=`${list.length} z ${cars.length} pojazdów`;
+function renderCars(){
+  const list=filtered();
+  grid.innerHTML=list.map(card).join('');
+  count.textContent=list.length+' z '+cars.length+' pojazdów';
   empty.hidden=list.length>0;
-
   grid.querySelectorAll('.car-card').forEach(el=>{
-    const open=()=>openModal(cars.find(c=>c.id===el.dataset.id));
-    el.onclick=open;
-    el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}};
+    const fn=()=>openModal(cars.find(c=>c.id===el.dataset.id));
+    el.onclick=fn; el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fn()}};
   });
 }
-
+function renderFeatured(){
+  const list=[...cars].sort((a,b)=>(Number(b.featured)-Number(a.featured))||(b.price-a.price)).slice(0,3);
+  $('#featuredGrid').innerHTML=list.map(c=>'<article class="featured-mini" tabindex="0" data-id="'+c.id+'"><div class="mini-media">'+mediaHTML(c)+'</div><div class="mini-copy"><span>'+esc(c.category)+'</span><h3>'+esc(c.name)+'</h3><strong>'+money(c.price)+'</strong></div></article>').join('');
+  document.querySelectorAll('.featured-mini').forEach(el=>{const fn=()=>openModal(cars.find(c=>c.id===el.dataset.id));el.onclick=fn;el.onkeydown=e=>{if(e.key==='Enter'){fn()}}});
+}
+function setHero(){
+  const c=[...cars].sort((a,b)=>(Number(b.featured)-Number(a.featured))||(b.price-a.price))[0];
+  if(!c)return;
+  $('#heroMedia').innerHTML=mediaHTML(c);
+  $('#heroId').textContent=c.id; $('#heroCategory').textContent=c.category.toUpperCase();
+  $('#heroName').textContent=c.name; $('#heroPrice').textContent=money(c.price);
+  const fn=()=>openModal(c); $('#heroCar').onclick=fn; $('#heroCar').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fn()}};
+}
 function openModal(c){
-  if(!c)return;
-  currentModalCar=c;
-  $('#modalImage').src=c.image;
-  $('#modalImage').alt=c.name;
-  $('#modalCategory').textContent=c.category;
-  $('#modalId').textContent=c.id;
-  $('#modalBrand').textContent=c.brand;
-  $('#modalName').textContent=c.name;
-  $('#modalPrice').textContent=money(c.price);
-  $('#modalVariants').textContent=c.variants??'—';
-  $('#modalCode').textContent=c.code||'—';
-  $('#copyId').textContent='Kopiuj ID pojazdu';
-  modal.showModal();
+  if(!c)return; currentCar=c;
+  $('#modalMedia').innerHTML=mediaHTML(c);
+  $('#modalCategory').textContent=c.category; $('#modalCategory2').textContent=c.category; $('#modalId').textContent=c.id;
+  $('#modalBrand').textContent=c.brand; $('#modalName').textContent=c.name; $('#modalPrice').textContent=money(c.price);
+  $('#modalVariants').textContent=c.variants??'—'; $('#modalCode').textContent=c.code||'—'; $('#modalPack').textContent=c.sourcePack||'—';
+  $('#modalUpdated').hidden=!c.updated; $('#copyId').textContent='Kopiuj ID pojazdu';
+  modal.showModal(); document.body.classList.add('modal-open');
 }
-
-function setFeatured(){
-  const featured=cars.filter(c=>c.featured);
-  const pool=featured.length?featured:cars;
-  const c=pool[Math.floor(Math.random()*pool.length)];
-  if(!c)return;
-  $('#heroImage').src=c.image;
-  $('#heroImage').alt=c.name;
-  $('#heroName').textContent=c.name;
-  $('#heroCategory').textContent=c.category.toUpperCase();
-  $('#heroPrice').textContent=money(c.price);
-  $('#heroId').textContent=c.id;
-  $('#featuredCard').onclick=()=>openModal(c);
+function closeModal(){if(modal.open)modal.close();document.body.classList.remove('modal-open')}
+function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),1600)}
+function reset(){
+  search.value='';brand.value='';price.value='';sort.value='featured';activeCategory='Wszystkie';updatedOnly=false;
+  $('#updatedToggle').classList.remove('active');$('#updatedToggle').setAttribute('aria-pressed','false');renderChips();renderCars();
 }
-
-function resetFilters(){
-  search.value='';
-  brand.value='';
-  price.value='';
-  sort.value='featured';
-  activeCategory='Wszystkie';
-  renderChips();
-  render();
+function init(data){
+  cars=data;
+  $('#statCars').textContent=cars.length; $('#statBrands').textContent=new Set(cars.map(c=>c.brand)).size; $('#statCats').textContent=new Set(cars.map(c=>c.category)).size;
+  $('#statTop').textContent=money(Math.max(...cars.map(c=>c.price))).replace('.00','');
+  fillBrands();renderChips();renderFeatured();setHero();renderCars();
 }
+search.oninput=renderCars; brand.onchange=renderCars; price.onchange=renderCars; sort.onchange=renderCars;
+$('#resetFilters').onclick=reset;
+$('#updatedToggle').onclick=()=>{updatedOnly=!updatedOnly;$('#updatedToggle').classList.toggle('active',updatedOnly);$('#updatedToggle').setAttribute('aria-pressed',String(updatedOnly));renderCars()};
+$('#modalClose').onclick=closeModal; $('#modalCloseBottom').onclick=closeModal;
+modal.addEventListener('close',()=>document.body.classList.remove('modal-open'));
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+$('#copyId').onclick=async()=>{if(!currentCar)return;try{await navigator.clipboard.writeText(currentCar.id);showToast('Skopiowano '+currentCar.id);$('#copyId').textContent='Skopiowano ✓'}catch{showToast(currentCar.id)}};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.open&&document.activeElement===search){search.value='';renderCars()}});
+const back=$('#backTop');window.addEventListener('scroll',()=>back.classList.toggle('show',scrollY>700),{passive:true});back.onclick=()=>scrollTo({top:0,behavior:'smooth'});
 
-$('#modalClose').onclick=()=>modal.close();
-$('#modalCloseBottom').onclick=()=>modal.close();
-modal.addEventListener('click',e=>{if(e.target===modal)modal.close();});
-search.oninput=render;
-brand.onchange=render;
-price.onchange=render;
-sort.onchange=render;
-$('#resetFilters').onclick=resetFilters;
-
-$('#copyId').onclick=async()=>{
-  if(!currentModalCar)return;
-  try{
-    await navigator.clipboard.writeText(currentModalCar.id);
-    $('#copyId').textContent='Skopiowano ✓';
-  }catch{
-    $('#copyId').textContent=currentModalCar.id;
-  }
-};
-
-fetch('cars.json')
-  .then(r=>{
-    if(!r.ok)throw new Error('cars.json');
-    return r.json();
-  })
-  .then(data=>{
-    cars=data;
-    $('#vehicleCount').textContent=cars.length;
-    $('#brandCount').textContent=new Set(cars.map(c=>c.brand)).size;
-    $('#categoryCount').textContent=new Set(cars.map(c=>c.category)).size;
-    fillBrands();
-    renderChips();
-    render();
-    setFeatured();
-  })
-  .catch(err=>{
-    console.error(err);
-    count.textContent='Błąd ładowania katalogu';
-    grid.innerHTML='<div class="empty-state"><strong>Nie udało się załadować katalogu.</strong><span>Odśwież stronę po chwili.</span></div>';
-  });
+fetch('cars.json?v=4',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Nie udało się pobrać cars.json');return r.json()}).then(init).catch(err=>{console.error(err);count.textContent='Błąd ładowania katalogu';grid.innerHTML='<div class="empty-state"><strong>Nie udało się załadować katalogu.</strong><span>Odśwież stronę po chwili.</span></div>'});
