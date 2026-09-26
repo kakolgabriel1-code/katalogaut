@@ -179,10 +179,11 @@
     "price": 209000,
     "variants": 3,
     "code": "new_cars:audi_q8",
-    "image": "assets/updated/audi-q8-etron.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 0
   },
   {
     "id": "HSC-023",
@@ -383,10 +384,11 @@
     "price": 1000000,
     "variants": 3,
     "code": "new_cars:hennessey_venom_f5",
-    "image": "assets/updated/hennessey-venom-f5.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 11
   },
   {
     "id": "HSC-042",
@@ -396,10 +398,11 @@
     "price": 760000,
     "variants": 3,
     "code": "new_cars:koenigsegg_regera",
-    "image": "assets/updated/koenigsegg-regera.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 1
   },
   {
     "id": "HSC-044",
@@ -409,10 +412,11 @@
     "price": 1010000,
     "variants": 3,
     "code": "new_cars:lamborghini_urus",
-    "image": "assets/updated/lamborghini-urus.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 2
   },
   {
     "id": "HSC-046",
@@ -435,10 +439,11 @@
     "price": 990000,
     "variants": 3,
     "code": "new_cars:mclaren_720s",
-    "image": "assets/updated/mclaren-720s.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 3
   },
   {
     "id": "HSC-049",
@@ -485,10 +490,11 @@
     "price": 281000,
     "variants": 3,
     "code": "new_cars:nissan_z",
-    "image": "assets/updated/nissan-z-2023.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 4
   },
   {
     "id": "HSC-054",
@@ -536,10 +542,11 @@
     "price": 738000,
     "variants": 3,
     "code": "new_cars:porsche_taycan",
-    "image": "assets/updated/porsche-taycan-turbo-s.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 5
   },
   {
     "id": "HSC-059",
@@ -549,10 +556,11 @@
     "price": 143000,
     "variants": 3,
     "code": "new_cars:shelby_supersnake_2024",
-    "image": "assets/updated/shelby-f150-super-snake.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 12
   },
   {
     "id": "HSC-060",
@@ -614,10 +622,11 @@
     "price": 256000,
     "variants": 15,
     "code": "blockyragecivil:brfiattipo",
-    "image": "assets/updated/fiat-tipo.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 6
   },
   {
     "id": "HSC-068",
@@ -639,10 +648,11 @@
     "price": 405000,
     "variants": 15,
     "code": "blockyragecivil:brmercedesw124",
-    "image": "assets/updated/mercedes-w124.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 7
   },
   {
     "id": "HSC-076",
@@ -714,10 +724,11 @@
     "price": 890000,
     "variants": 16,
     "code": "blockyragecivil:brteslacybertruck",
-    "image": "assets/updated/tesla-cybertruck.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 8
   },
   {
     "id": "HSC-083",
@@ -727,10 +738,11 @@
     "price": 667000,
     "variants": 14,
     "code": "blockyragecivil:brteslamodelx",
-    "image": "assets/updated/tesla-model-x.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "R.A.G.E-V2.3_1.16.5.jar",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 9
   },
   {
     "id": "HSC-084",
@@ -836,10 +848,11 @@
     "price": 816000,
     "variants": 11,
     "code": "gtcraft:mazda_fc3s",
-    "image": "assets/updated/mazda-rx7-fc3s.webp",
+    "image": "assets/updated/catalog-updates-sprite.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "spriteIndex": 10
   },
   {
     "id": "HSC-094",
