@@ -85,30 +85,6 @@
     "featured": false
   },
   {
-    "id": "HSC-010",
-    "name": "PMC Concord Sedan (Ford)",
-    "brand": "Ford",
-    "category": "Sedan / miejskie",
-    "price": 142000,
-    "variants": 22,
-    "code": "unupmc:unupmc_vehicle_pmc_concord_sedan",
-    "image": "img-010-luksusowy-sedan-voxel-w-oranzowej-mgle.webp",
-    "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
-    "featured": false
-  },
-  {
-    "id": "HSC-015",
-    "name": "UNU-Fuchu Mogura (Ford)",
-    "brand": "Ford",
-    "category": "Sedan / miejskie",
-    "price": 79000,
-    "variants": 8,
-    "code": "unufuchu:unufuchu_vehicle_unufuchu_mogura",
-    "image": "img-009-wokselowy-klasyczny-kombi-w-pomaranczowym-swietle.webp",
-    "sourcePack": "Expanded UNUverse Pack [MTS] 1.19.2-22.18.0-2.1.3.jar",
-    "featured": false
-  },
-  {
     "id": "HSC-019",
     "name": "White Bentley Bentayga",
     "brand": "Bentley",
