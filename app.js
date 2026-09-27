@@ -16,9 +16,14 @@ function makeFallbackNode(id){const c=cars.find(x=>x.id===id)||{};const d=docume
 window.makeFallbackNode=makeFallbackNode;
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),1700)}
 function saveFav(){localStorage.setItem('hsc-favorites',JSON.stringify([...favorites]))}
-function topCars(){return [...cars].sort((a,b)=>(b.featured-a.featured)||(b.price-a.price)).slice(0,5)}
+function heroPick(){return [...cars].sort((a,b)=>b.price-a.price)[0]||cars[0]}
+function topCars(){
+  const hero=heroPick();
+  const rest=[...cars].filter(c=>!hero||c.id!==hero.id).sort((a,b)=>(b.featured-a.featured)||(b.price-a.price));
+  return hero?[hero,...rest].slice(0,5):rest.slice(0,5)
+}
 async function init(){
-  try{const r=await fetch('cars.json?v=11',{cache:'no-store'});cars=await r.json();if(!Array.isArray(cars))cars=cars.cars||[]}
+  try{const r=await fetch('cars.json?v=12',{cache:'no-store'});cars=await r.json();if(!Array.isArray(cars))cars=cars.cars||[]}
   catch(e){$('#resultCount').textContent='Nie udało się załadować katalogu';return}
   populate(); renderAll(); bind();
 }
@@ -50,7 +55,7 @@ function applyFilters(){
 }
 function renderAll(){applyFilters();renderHero();renderFeatured();renderGrid();renderCompareDock()}
 function renderHero(){
-  const pick=[...cars].sort((a,b)=>b.price-a.price)[0]||cars[0];if(!pick)return;current=current||pick;
+  const pick=heroPick();if(!pick)return;current=current||pick;
   const bg=(pick.image&&pick.image!==spritePath&&!Number.isInteger(pick.spriteIndex))?`url("${pick.image}")`:'radial-gradient(circle at 75% 35%,rgba(255,154,77,.18),transparent 25%),linear-gradient(135deg,#17120e,#080706 68%)';
   $('#heroBackdrop').style.backgroundImage=bg;
   $('#heroFocusMedia').innerHTML=imageMarkup(pick,'media-img',false);
@@ -61,14 +66,14 @@ function renderFeatured(){
   $('#featuredGrid').innerHTML=topCars().slice(0,5).map(c=>`<article class="featured-card" data-id="${esc(c.id)}" tabindex="0" role="button"><div class="media-wrap">${imageMarkup(c)}</div><div class="featured-copy"><span>${esc(c.category)} · ${esc(c.id)}</span><h3>${esc(cleanName(c.name))}</h3><strong>${money(c.price)}</strong></div></article>`).join('');
 }
 function card(c){
-  const fav=favorites.has(c.id);return `<article class="car-card" data-id="${esc(c.id)}" tabindex="0"><div class="card-media">${imageMarkup(c)}<div class="card-top-actions"><div class="badge-stack"><span class="badge">${esc(c.category)}</span>${c.updated?'<span class="badge updated">UPDATE</span>':''}</div><button class="heart ${fav?'active':''}" data-fav="${esc(c.id)}" type="button" aria-label="Ulubione">${fav?'♥':'♡'}</button></div></div><div class="card-body"><div class="card-meta"><span>${esc(c.brand||'—')}</span><span>${esc(c.id)}</span></div><h3>${esc(cleanName(c.name))}</h3><div class="card-foot"><div class="card-price">${money(c.price)} <small>RP</small></div><div class="card-actions"><button class="mini-action" data-compare="${esc(c.id)}" type="button">+ porównaj</button><button class="mini-action" data-open="${esc(c.id)}" type="button">zobacz →</button></div></div></div></article>`}
+  const fav=favorites.has(c.id);return `<article class="car-card" data-id="${esc(c.id)}" tabindex="0"><div class="card-media">${imageMarkup(c)}<div class="card-top-actions"><div class="badge-stack"><span class="badge">${esc(c.category)}</span>${c.updated?'<span class="badge updated">UPDATE</span>':''}${c.image?'<span class="badge photo-ready">FULL FRAME</span>':''}</div><button class="heart ${fav?'active':''}" data-fav="${esc(c.id)}" type="button" aria-label="Ulubione">${fav?'♥':'♡'}</button></div></div><div class="card-body"><div class="card-meta"><span>${esc(c.brand||'—')}</span><span>${esc(c.id)}</span></div><h3>${esc(cleanName(c.name))}</h3><div class="card-foot"><div class="card-price">${money(c.price)} <small>RP</small></div><div class="card-actions"><button class="mini-action" data-compare="${esc(c.id)}" type="button">+ porównaj</button><button class="mini-action" data-open="${esc(c.id)}" type="button">zobacz →</button></div></div></div></article>`}
 function renderGrid(){
   $('#carGrid').innerHTML=filtered.map(card).join('');$('#resultCount').textContent=`${filtered.length} z ${cars.length} pojazdów`;
   $('#emptyState').hidden=filtered.length!==0;renderChips();
 }
 function openCar(id){
   const c=cars.find(x=>x.id===id);if(!c)return;current=c;
-  $('#modalMedia').innerHTML=imageMarkup(c,'media-img',false);$('#modalCategory').textContent=c.category;$('#modalId').textContent=c.id;$('#modalUpdated').hidden=!c.updated;$('#modalBrand').textContent=c.brand||'—';$('#modalBrand2').textContent=c.brand||'—';$('#modalName').textContent=cleanName(c.name);$('#modalPrice').textContent=money(c.price);$('#modalVariants').textContent=c.variants??'—';$('#modalCategory2').textContent=c.category||'—';$('#modalCode').textContent=c.code||'—';$('#modalPack').textContent=c.sourcePack||'—';updateModalFav();updateModalCompare();$('#carModal').showModal();document.body.style.overflow='hidden'}
+  $('#modalMedia').innerHTML=imageMarkup(c,'media-img',false);$('#modalCategory').textContent=c.category;$('#modalId').textContent=c.id;$('#modalUpdated').hidden=!c.updated;$('#modalBrand').textContent=c.brand||'—';$('#modalBrand2').textContent=c.brand||'—';$('#modalName').textContent=cleanName(c.name);$('#modalPrice').textContent=money(c.price);$('#modalVariants').textContent=c.variantColors?.length?`${c.variants??c.variantColors.length} · ${c.variantColors.join(' / ')}`:(c.variants??'—');$('#modalCategory2').textContent=c.category||'—';$('#modalCode').textContent=c.code||'—';$('#modalPack').textContent=c.sourcePack||'—';updateModalFav();updateModalCompare();$('#carModal').showModal();document.body.style.overflow='hidden'}
 function closeDialog(d){d.close();if(!$('#compareModal').open&&!$('#carModal').open)document.body.style.overflow=''}
 function toggleFav(id){favorites.has(id)?favorites.delete(id):favorites.add(id);saveFav();renderGrid();updateModalFav();toast(favorites.has(id)?'Dodano do ulubionych':'Usunięto z ulubionych')}
 function updateModalFav(){if(!current)return;const on=favorites.has(current.id),b=$('#modalFavorite');b.classList.toggle('active',on);b.textContent=on?'♥ W ulubionych':'♡ Dodaj do ulubionych'}
