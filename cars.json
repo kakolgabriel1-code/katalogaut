@@ -108,7 +108,7 @@
     "price": 560000,
     "variants": 3,
     "code": "new_cars:audi_q8",
-    "image": "",
+    "image": "audi-q8-etron.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -300,7 +300,7 @@
     "price": 800000,
     "variants": 3,
     "code": "new_cars:hennessey_venom_f5",
-    "image": "",
+    "image": "hennessey-venom-f5.webp",
     "sourcePack": "New_Cars4.4",
     "featured": true,
     "updated": true
@@ -313,7 +313,7 @@
     "price": 800000,
     "variants": 3,
     "code": "new_cars:koenigsegg_regera",
-    "image": "",
+    "image": "koenigsegg-regera.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -326,7 +326,7 @@
     "price": 808000,
     "variants": 3,
     "code": "new_cars:lamborghini_urus",
-    "image": "",
+    "image": "lamborghini-urus.webp",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -518,7 +518,7 @@
     "price": 652800,
     "variants": 11,
     "code": "gtcraft:mazda_fc3s",
-    "image": "",
+    "image": "mazda-rx7-fc3s.webp",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false,
     "updated": true
