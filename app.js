@@ -46,7 +46,7 @@ function applyFilters(){
     if(pf){const [op,v]=pf.split(':'),n=+v;if(op==='lte'&&c.price>n)return false;if(op==='gte'&&c.price<n)return false}
     return true;
   });
-  if(sort==='priceDesc')filtered.sort((a,b)=>b.price-a.price);else if(sort==='priceAsc')filtered.sort((a,b)=>a.price-b.price);else if(sort==='name')filtered.sort((a,b)=>cleanName(a.name).localeCompare(cleanName(b.name),'pl'));else filtered.sort((a,b)=>(b.featured-a.featured)||(b.updated-a.updated)||(b.price-a.price));
+  if(sort==='priceDesc')filtered.sort((a,b)=>b.price-a.price);else if(sort==='priceAsc')filtered.sort((a,b)=>a.price-b.price);else if(sort==='featured')filtered.sort((a,b)=>(b.featured-a.featured)||(b.updated-a.updated)||(b.price-a.price));else filtered.sort((a,b)=>cleanName(a.name).localeCompare(cleanName(b.name),'pl'));
 }
 function renderAll(){applyFilters();renderHero();renderFeatured();renderGrid();renderCompareDock()}
 function renderHero(){
@@ -85,7 +85,7 @@ function openCompare(){
   $('#compareTable').innerHTML=`<thead><tr><th>Pojazd</th>${cs.map(c=>`<th>${esc(cleanName(c.name))}</th>`).join('')}</tr></thead><tbody>${row('Zdjęcie',c=>`<div class="compare-thumb">${imageMarkup(c)}</div>`)}${row('Cena RP',c=>`<strong>${money(c.price)}</strong>`)}${row('Marka',c=>esc(c.brand||'—'))}${row('Kategoria',c=>esc(c.category||'—'))}${row('Warianty',c=>esc(c.variants??'—'))}${row('HSC ID',c=>`<code>${esc(c.id)}</code>`)}</tbody>`;
   $('#compareModal').showModal();document.body.style.overflow='hidden'
 }
-function reset(){category='Wszystkie';$('#searchInput').value='';$('#brandFilter').value='';$('#priceFilter').value='';$('#sortSelect').value='featured';$('#updatedToggle').classList.remove('active');$('#favoritesToggle').classList.remove('active');renderAll()}
+function reset(){category='Wszystkie';$('#searchInput').value='';$('#brandFilter').value='';$('#priceFilter').value='';$('#sortSelect').value='name';$('#updatedToggle').classList.remove('active');$('#favoritesToggle').classList.remove('active');renderAll()}
 function bind(){
   ['input','change'].forEach(ev=>$('#searchInput').addEventListener(ev,renderAll));['brandFilter','priceFilter','sortSelect'].forEach(id=>$('#'+id).addEventListener('change',renderAll));$('#resetFilters').addEventListener('click',reset);
   document.addEventListener('click',e=>{const cat=e.target.closest('[data-cat]');if(cat){category=cat.dataset.cat;renderAll();return}const fav=e.target.closest('[data-fav]');if(fav){e.stopPropagation();toggleFav(fav.dataset.fav);return}const cmp=e.target.closest('[data-compare]');if(cmp){e.stopPropagation();toggleCompare(cmp.dataset.compare);return}const open=e.target.closest('[data-open]');if(open){e.stopPropagation();openCar(open.dataset.open);return}const card=e.target.closest('.car-card,.featured-card');if(card)openCar(card.dataset.id)});
