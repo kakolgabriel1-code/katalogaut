@@ -116,7 +116,7 @@
     "name": "White Audi R8",
     "brand": "Audi",
     "category": "Supercar",
-    "price": 466000,
+    "price": 763000,
     "variants": 3,
     "code": "new_cars:audi_r8",
     "image": "img-022-luksusowe-audi-r8-w-studio.webp",
@@ -135,18 +135,6 @@
     "sourcePack": "New_Cars4.4",
     "featured": true,
     "updated": true
-  },
-  {
-    "id": "HSC-025",
-    "name": "White Bentley Bentayga",
-    "brand": "Bentley",
-    "category": "SUV",
-    "price": 272000,
-    "variants": 3,
-    "code": "new_cars:bentley_bentayga",
-    "image": "img-024-luksusowy-bentley-w-swietle-showroomu.webp",
-    "sourcePack": "New_Cars4.4",
-    "featured": false
   },
   {
     "id": "HSC-026",
