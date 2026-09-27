@@ -23,7 +23,7 @@ function topCars(){
   return hero?[hero,...rest].slice(0,5):rest.slice(0,5)
 }
 async function init(){
-  try{const r=await fetch('cars.json?v=14',{cache:'no-store'});cars=await r.json();if(!Array.isArray(cars))cars=cars.cars||[]}
+  try{const r=await fetch('cars.json?v=15',{cache:'no-store'});cars=await r.json();if(!Array.isArray(cars))cars=cars.cars||[]}
   catch(e){$('#resultCount').textContent='Nie udało się załadować katalogu';return}
   populate(); renderAll(); bind();
 }

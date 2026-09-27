@@ -56,7 +56,7 @@
     "price": 99200,
     "variants": 6,
     "code": "brcc:uno",
-    "image": "",
+    "image": "fiat-uno.png",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false,
     "updated": true
@@ -69,7 +69,7 @@
     "price": 82400,
     "variants": 2,
     "code": "brcc:uno_van",
-    "image": "",
+    "image": "fiat-uno-van.png",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
     "featured": false,
     "updated": true
@@ -352,7 +352,7 @@
     "price": 792000,
     "variants": 3,
     "code": "new_cars:mclaren_720s",
-    "image": "",
+    "image": "mclaren-720s.png",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -427,7 +427,7 @@
     "price": 696000,
     "variants": 3,
     "code": "new_cars:porsche_cayenne_turbo_gt",
-    "image": "",
+    "image": "porsche-cayenne-turbo-gt.png",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -440,7 +440,7 @@
     "price": 699200,
     "variants": 3,
     "code": "new_cars:porsche_panamera",
-    "image": "",
+    "image": "porsche-panamera-turbo-s.png",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -453,7 +453,7 @@
     "price": 670400,
     "variants": 3,
     "code": "new_cars:porsche_taycan",
-    "image": "",
+    "image": "porsche-taycan-turbo-s.png",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -505,7 +505,7 @@
     "price": 576000,
     "variants": 3,
     "code": "new_cars:tesla_x_plaid",
-    "image": "",
+    "image": "tesla-model-x-plaid.png",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -531,7 +531,7 @@
     "price": 590400,
     "variants": 8,
     "code": "gtcraft:nissan_180sx",
-    "image": "",
+    "image": "nissan-180sx-rps13.png",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false,
     "updated": true
@@ -594,7 +594,7 @@
     "price": 530400,
     "variants": 8,
     "code": "gtcraft:nissan_s14",
-    "image": "",
+    "image": "nissan-silvia-s14.png",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false,
     "updated": true
@@ -607,7 +607,7 @@
     "price": 552800,
     "variants": 7,
     "code": "gtcraft:nissan_s15",
-    "image": "",
+    "image": "nissan-silvia-s15-spec-r.png",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false,
     "updated": true
