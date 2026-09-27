@@ -56,9 +56,10 @@
     "price": 124000,
     "variants": 6,
     "code": "brcc:uno",
-    "image": "img-008-wokselowy-hatchback-w-pomaranczowym-swietle.webp",
+    "image": "",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-009",
@@ -68,9 +69,10 @@
     "price": 103000,
     "variants": 2,
     "code": "brcc:uno_van",
-    "image": "img-009-wokselowy-klasyczny-kombi-w-pomaranczowym-swietle.webp",
+    "image": "",
     "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-019",
@@ -205,7 +207,7 @@
     "name": "White Cadillac Escalade 2019",
     "brand": "Cadillac",
     "category": "SUV",
-    "price": 430000,
+    "price": 630000,
     "variants": 3,
     "code": "new_cars:cadillac_escalade_2019",
     "image": "img-030-luksusowy-cadillac-escalade-w-swietle-bursztynu.webp",
@@ -218,7 +220,7 @@
     "name": "White Cadillac Escalade 2022",
     "brand": "Cadillac",
     "category": "SUV",
-    "price": 501000,
+    "price": 701000,
     "variants": 3,
     "code": "new_cars:cadillac_escalade_2022",
     "image": "img-031-luksusowy-cadillac-w-kinowej-scenerii.webp",
@@ -438,7 +440,7 @@
     "price": 874000,
     "variants": 3,
     "code": "new_cars:porsche_panamera",
-    "image": "img-002-luksusowy-sedan-w-nastrojowym-showroomie.webp",
+    "image": "",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -503,7 +505,7 @@
     "price": 720000,
     "variants": 3,
     "code": "new_cars:tesla_x_plaid",
-    "image": "img-021-luksusowy-suv-w-kinowym-showroomie.webp",
+    "image": "",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -529,9 +531,10 @@
     "price": 738000,
     "variants": 8,
     "code": "gtcraft:nissan_180sx",
-    "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
+    "image": "",
     "sourcePack": "gtcraft-2.0.1",
-    "featured": false
+    "featured": false,
+    "updated": true
   },
   {
     "id": "HSC-095",
@@ -591,7 +594,7 @@
     "price": 663000,
     "variants": 8,
     "code": "gtcraft:nissan_s14",
-    "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
+    "image": "",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false,
     "updated": true
@@ -604,7 +607,7 @@
     "price": 691000,
     "variants": 7,
     "code": "gtcraft:nissan_s15",
-    "image": "img-057-nissan-silvia-s13-w-mrocznym-studio.webp",
+    "image": "",
     "sourcePack": "gtcraft-2.0.1",
     "featured": false,
     "updated": true
