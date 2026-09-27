@@ -402,7 +402,7 @@
     "price": 624800,
     "variants": 3,
     "code": "new_cars:nissan_z",
-    "image": "",
+    "image": "nissan-z-2023.png",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
@@ -466,7 +466,7 @@
     "price": 676000,
     "variants": 3,
     "code": "new_cars:shelby_supersnake_2024",
-    "image": "",
+    "image": "shelby-f150-super-snake.png",
     "sourcePack": "New_Cars4.4",
     "featured": false,
     "updated": true
