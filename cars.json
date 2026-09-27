@@ -12,18 +12,6 @@
     "featured": false
   },
   {
-    "id": "HSC-004",
-    "name": "Opala Rusty",
-    "brand": "Chevrolet",
-    "category": "Klasyki / JDM",
-    "price": 116000,
-    "variants": 9,
-    "code": "brcc:opala",
-    "image": "img-004-klasyczne-coupe-w-kinowym-triptyku.webp",
-    "sourcePack": "BRCC 1.0.6 1.16.5-1.20.1",
-    "featured": false
-  },
-  {
     "id": "HSC-005",
     "name": "RAM1500",
     "brand": "RAM",
