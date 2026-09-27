@@ -697,5 +697,18 @@
     "sourcePack": "Extra",
     "featured": false,
     "updated": true
+  },
+  {
+    "id": "HSC-109",
+    "name": "Rolls-Royce Spectre",
+    "brand": "Rolls-Royce",
+    "category": "Sportowe",
+    "price": 979000,
+    "variants": 1,
+    "code": "",
+    "image": "assets/cars/rolls-royce-spectre.webp",
+    "sourcePack": "Custom",
+    "featured": false,
+    "updated": true
   }
 ]
