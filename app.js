@@ -18,7 +18,7 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 function saveFav(){localStorage.setItem('hsc-favorites',JSON.stringify([...favorites]))}
 function topCars(){return [...cars].sort((a,b)=>(b.featured-a.featured)||(b.price-a.price)).slice(0,5)}
 async function init(){
-  try{const r=await fetch('cars.json?v=10',{cache:'no-store'});cars=await r.json();if(!Array.isArray(cars))cars=cars.cars||[]}
+  try{const r=await fetch('cars.json?v=11',{cache:'no-store'});cars=await r.json();if(!Array.isArray(cars))cars=cars.cars||[]}
   catch(e){$('#resultCount').textContent='Nie udało się załadować katalogu';return}
   populate(); renderAll(); bind();
 }
@@ -50,7 +50,7 @@ function applyFilters(){
 }
 function renderAll(){applyFilters();renderHero();renderFeatured();renderGrid();renderCompareDock()}
 function renderHero(){
-  const pick=topCars()[0]||cars[0];if(!pick)return;current=current||pick;
+  const pick=[...cars].sort((a,b)=>b.price-a.price)[0]||cars[0];if(!pick)return;current=current||pick;
   const bg=(pick.image&&pick.image!==spritePath&&!Number.isInteger(pick.spriteIndex))?`url("${pick.image}")`:'radial-gradient(circle at 75% 35%,rgba(255,154,77,.18),transparent 25%),linear-gradient(135deg,#17120e,#080706 68%)';
   $('#heroBackdrop').style.backgroundImage=bg;
   $('#heroFocusMedia').innerHTML=imageMarkup(pick,'media-img',false);

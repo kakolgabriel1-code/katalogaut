@@ -704,11 +704,16 @@
     "brand": "Rolls-Royce",
     "category": "Sportowe",
     "price": 979000,
-    "variants": 1,
+    "variants": 3,
     "code": "",
     "image": "assets/cars/rolls-royce-spectre.webp",
-    "sourcePack": "Custom",
+    "sourcePack": "New_Cars4.4",
     "featured": false,
-    "updated": true
+    "updated": true,
+    "variantColors": [
+      "Czarny",
+      "Biały",
+      "Niebieski"
+    ]
   }
 ]
